@@ -1,0 +1,10 @@
+IF
+    Global("LK#XulLaraceExists","AR2100",0)
+    Global("LK#XulQuest","GLOBAL",3)
+THEN
+  RESPONSE #100
+    CreateCreature("lk#xlar",[136.3286],3)
+    CreateCreature("lk#xmg1",[141.3212],4)
+    CreateCreature("lk#xmg2",[94.3327],8)
+    SetGlobal("LK#XulLaraceExists","AR2100",1)
+END

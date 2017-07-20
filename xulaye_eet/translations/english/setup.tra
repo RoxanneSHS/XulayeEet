@@ -1,0 +1,147 @@
+@0    = ~The Drow Summoning Ritual
+
+I gave Phaere the eggs that Xulaye had given me... and it seems that she has been fooled into thinking they are the real ones.  The real eggs are still in my possession... and both Phaere and Matron Ardulace think they have the real eggs for the upcoming ritual.
+Phaere has gone onwards to the Temple of Lolth and has commanded me to follow right away.~
+@1    = ~An invisible force prevents you from leaving the area.~
+@2    = ~Familial Intrigue
+
+One of the drow has been ordered to join us; a sister of Phaere Despana, the woman we have been charged with saving.  We will have to be even more careful not to betray ourselves, because if we do, it would be one hell of a fight.~
+@3    = ~Familial Intrigue
+
+It seems Xulaye has seen through our ruse, and although she does not seem to be interested in telling the rest of the drow, she has threatened to do so if we do not obey her commands.~
+@4    = ~Familial Intrigue
+
+We have been approached by a drow man by the name of Ikaxan, claiming to be an envoy of the Matron of House Kii'Rret.  It seems Xulaye is planning something, since she is obviously very concerned about this meeting.  I have agreed to accompany her to see the Matron--we will see what comes of it.~
+@5    = ~Familial Intrigue
+
+After a short conversation with Mistress Larace of House Kii'Rret, we have paid her twenty thousand coins in exchange for her aid.  I am not entirely sure what kind of aid it is, but I suspect it to be military in nature.  Time will tell, I suppose.~
+@6    = ~Familial Intrigue
+     
+I have agreed to retrieve a set of armor for Matron Larace in exchange for the aid of House Kii'Rret.  It is in the possession of some duergar to the southwest.  When we have it, she has told us to give it to her envoy, Ikaxan, who will be waiting in the Male Fighter's Guild in Ust Natha.~
+@7    = ~Familial Intrigue
+    
+I have secured the armor from the duergar, and now need to hand it to Ikaxan in the Male Fighter's Guild building in Ust Natha.  It is a very finely wrought piece of armor--it's no wonder the Matronw ould want it in her posession.~
+@8    = ~Familial Intrigue
+    
+I have agreed to get Carlig one of three things in return for the armor Matron Larace requires.  Unfortunately, it doesn't seem that any of these things will be particularly easy to find; the eye of an Elder Orb, blood from a Mind Flayer Elder Brain or the blood of a Kua-Toan prince.  He believes there is an Elder Orb in the eastern tunnels, and a Kua-Toan city to the west, but he is not sure where I would be able to find an Elder Brain.~
+@9    = ~Familial Intrigue
+     
+I have given the Mithril Chain to Ikaxan, who has assured Xulaye that House Kii'Rret will make the necessary preparations.  It seems Xulaye's plans--whatever they are, exactly--are coming to fruition.~
+@10   = ~Familial Intrigue
+
+In order to secure her reign in Ust Natha, Xulaye has given me a set of fake eggs which I am to give to Phaere instead of the real ones.  This will ensure both Phaere and Ardulace will fail, and Xulaye will stand supreme, which she seems markedly happy about.~
+@11   = ~Familial Intrigue
+  
+After my surfacer heritage was unveiled by the demon, we attacked.  If all goes well, Xulaye will have Ust Natha within mere hours.~
+@12   = ~Xulaye NPC Mod for EET~
+@13   = ~ToB is not installed! Please install the Throne of Bhaal expansion before installing Xulaye.~
+@14   = ~You must have the BGII Fixpack installed. Please install it before installing Xulaye.~
+@15   = ~Xulaye~
+@16   = ~Xulaye Despana~
+@17   = ~When asked about her past, XULAYE stares at you for a moment, before revealing that she is a member of the Drow aristocracy, and a daughter of House Despana. Beyond that, you can glean little, but from the look in her eyes you can tell her past has been a difficult one. You also get the feeling that any further attempts to pry into her history will be met with a great deal of venom, and possible suspicion - something you think you should avoid when dealing with this particular Drow.~
+@18   = ~Hmph. I suppose this group will do.~ [lk#xul1]
+@19   = ~You show a flash of wisdom in this decision.~ [lk#xul2]
+@20   = ~I am weary. I demand that we call a halt!~ [lk#xul3]
+@21   = ~This lack of ambition you show is pathetic.~ [lk#xul4]
+@22   = ~Feel the wrath of the Spider Queen's servant!~ [lk#xul5]
+@23   = ~Lolth take you!~ [lk#xul6]
+@24   = ~Pray to your gods for mercy, for you shall get none from me!~ [lk#xul7]
+@25   = ~Bleed and die, scum!~ [lk#xul8]
+@26   = ~You will die, as have *all* the rest!~ [lk#xul9]
+@27   = ~A curse upon you all... for letting it come to this...!~ [lk#xul10]
+@28   = ~You wound me?! You *DARE*?!~ [lk#xul11]
+@29   = ~So little time... so many people who need to die.~ [lk#xul12]
+@30   = ~Yes?~ [lk#xul13]
+@31   = ~What?~ [lk#xul14]
+@32   = ~*What* is it?~ [lk#xul15]
+@33   = ~Speak quickly, I have no time for your nonsense.~ [lk#xul16]
+@34   = ~What do you want *now*?!~ [lk#xul17]
+@35   = ~You try my patience.~ [lk#xul18]
+@36   = ~For Lolth!~ [lk#xul19]
+@37   = ~For the Spider Queen!~ [lk#xul20]
+@38   = ~I will do this at the Matron's command - *not* yours.~ [lk#xul21]
+@39   = ~Do not think me your servant, fool.~ [lk#xul22]
+@40   = ~*You* should be doing this for *me*.~ [lk#xul23]
+@41   = ~When I come into power... I will never have to do this again.~ [lk#xul24]
+@42   = ~As you wish.~ [lk#xul25]
+@43   = ~Oh! I have been selected! So happy am I, to have been deigned notice! (snort)~ [lk#xul26]
+@44   = ~And to think, I turned down a trip to the massage chambers for *this*.~ [lk#xul27]
+@45   = ~Praise Lolth!~ [lk#xul28]
+@46   = ~No! How can this be?!~ [lk#xul29]
+@47   = ~This weapon is not making a scratch!~ [lk#xul30]
+@48   = ~I am not your servant! Carry your own garbage!~ [lk#xul31]
+@49   = ~You are behaving - passably.~ [lk#xul32]
+@50   = ~Why am I not surprised by your incompetence?~ [lk#xul33]
+@51   = ~Such idiocy is apalling.~ [lk#xul34]
+@52   = ~This has gone on long enough! Your failures shall bring you death!~ [lk#xul35]
+@53   = ~They will never know what hit them...~ [lk#xul36]
+@54   = ~Striking from the shadows is *such* a thrill...~ [lk#xul37]
+@55   = ~I take what I wish.~ [lk#xul38]
+@56   = ~Benerra~
+@57   = ~Benerra Despana~
+@58   = ~Tarkiz~
+@59   = ~Tarkiz Despana~
+@60   = ~Drow Messenger~
+@61   = ~Matron Mother Larace~
+@62   = ~Matron's Guard~
+@63   = ~Drow~
+@64   = ~Drow Wizard~
+@65   = ~Drow Priestess~
+@66   = ~Skeleton~
+@67   = ~Temple Guard~
+@68   = ~Kii'Ret Guard~
+@69   = ~Small Spider~
+@70   = ~Giant Spider~
+@71   = ~Phase Spider~
+@72   = ~Sword Spider~
+@73   = ~Vortex Spider~
+@74   = ~Hive Mistress~
+@75   = ~Fake Dragon Eggs (Xulaye's)~
+@76   = ~These are the false dragon eggs given to you by Xulaye.~
+@77   = ~Chain Mail~
+@78   = ~Mithril Chain +4~
+@79   = ~Chain mail is made of interlocking metal rings.  It is always worn over a layer of padded fabric or soft leather, in order to prevent chafing and lessen the impact of blows.
+
+STATISTICS:
+
+Armor Class: 5
+Weight: 40
+Requires: 8 Strength
+Not Usable By:
+ Druid 
+ Mage 
+ Thief
+ Kensai
+ Monk
+ Archer
+ Beast Master
+ Stalker~
+@80   = ~This magnificent mithril armor shines even in the dull light of the Underdark. Beyond that it was forged in the dim past by duergar smiths, there is little known about it, but it is obviously prized by dwarves and drow alike.
+
+STATISTICS:
+
+Armor Class: 1
+Weight: 7
+Requires: 8 Strength
+Not Usable By:
+ Druid
+ Mage 
+ Thief
+ Kensai
+ Monk
+ Archer
+ Beast Master
+ Stalker~
+@81   = ~<CHARNAME>'s Piwafwi Cloak~
+@82   = ~The cloak can be made in every possible shape with just about every type of fabric.  The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.~
+@83   = ~The cloak can be made in every possible shape with just about every type of fabric.  The most common forms are a circular piece of fabric with a hole in the center for the head, and fabric draped from neck, connected by a chain, brooch, cord, or pins.  This cloak was given to <CHARNAME> by Xulaye as reward for <PRO_HISHER> help in killing her mother and sister so that she could become Matron Mother of House Despana, and ruler of Ust Natha.  It has been specifically enchanted to be usable on the surface, unlike most items of drow creation.
+
+STATISTICS
+
+Hide in Shadows: + 75%
+Move Silently: + 75%
+Saving Throw vs. Breath: +6
+Not Usable By:
+ Wizard Slayer~
+@84   = ~Xulaye's Player Initiated Dialogues~
+@85   = ~Korgan Fights at the Pits~

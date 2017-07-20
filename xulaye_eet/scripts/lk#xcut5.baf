@@ -1,0 +1,15 @@
+IF
+    True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ActionOverride("lk#xtm1",MoveToPoint([730.1730]))
+    ActionOverride("lk#xtm2",MoveToPoint([730.1730]))
+    ActionOverride("lk#xtm3",MoveToPoint([730.1730]))
+    ActionOverride("lk#xtm4",MoveToPoint([730.1730]))
+    ActionOverride("lk#xtm1",DestroySelf())
+    ActionOverride("lk#xtm2",DestroySelf())
+    ActionOverride("lk#xtm3",DestroySelf())
+    ActionOverride("lk#xtm4",DestroySelf())
+    EndCutSceneMode()
+END

@@ -1,0 +1,493 @@
+BACKUP ~xulaye_eet/backup~
+AUTHOR ~K'aeloree (kae@spellholdstudios.net) and others~
+
+VERSION ~v2.0~
+
+AUTO_TRA ~xulaye_eet/translations/%s~
+
+LANGUAGE ~English~ ~english~ ~xulaye_eet/translations/english/setup.tra~
+
+BEGIN @12
+
+  
+// Adding CD_STATE_NOTVALID
+APPEND ~STATE.IDS~
+  ~0x80101FEF CD_STATE_NOTVALID~
+  UNLESS ~CD_STATE_NOTVALID~
+  
+  
+//Appending IDSes...
+APPEND ~shoutids.ids~ ~151 HELP_ME_GROUP151~
+  UNLESS ~^151 HELP_ME_GROUP151~
+  
+
+// Changing triggers in the Phaere talk in which you give her the fake eggs to add Xulaye's
+COPY_EXISTING ~udphae01.dlg~ ~override~
+  DECOMPILE_DLG_TO_D
+      REPLACE_TEXTUALLY
+        ~OR(2)
+        PartyHasItem("MISC9t")
+        PartyHasItem("MISC9v")~
+        ~OR(3)
+        PartyHasItem("MISC9t")
+        PartyHasItem("MISC9v")
+        PartyHasItem("LK#XEGGS")~
+  COMPILE_D_TO_DLG
+BUT_ONLY_IF_IT_CHANGES
+
+
+// Changing triggers in the Drow Temple so the EggsReplaced variable works
+COPY_EXISTING ~ar2201.bcs~ ~override~
+  DECOMPILE_BCS_TO_BAF
+      REPLACE_TEXTUALLY
+        ~OR(2)
+        Contains("misc9u","Eggs")
+        Contains("misc9v","Eggs")~
+        ~OR(3)
+        Contains("misc9u","Eggs")
+        Contains("misc9v","Eggs")
+        Contains("LK#XEGGS","Eggs")~
+  COMPILE_BAF_TO_BCS
+BUT_ONLY_IF_IT_CHANGES
+
+
+// Ensures Xulaye's fake eggs are removed from container
+COPY_EXISTING ~udeggcon.bcs~ ~override~
+  DECOMPILE_BCS_TO_BAF
+      REPLACE_TEXTUALLY
+        ~OR(2)
+        Contains("misc9u","Eggs")
+        Contains("misc9v","Eggs")~
+        ~OR(3)
+        Contains("misc9u","Eggs")
+        Contains("misc9v","Eggs")
+        Contains("LK#XEGGS","Eggs")~
+      REPLACE_TEXTUALLY
+        ~DestroyItem("MISC9V")~
+        ~DestroyItem("MISC9V")
+        DestroyItem("LK#XEGGS")~
+  COMPILE_BAF_TO_BCS
+BUT_ONLY_IF_IT_CHANGES
+
+
+// Changes conditions in one of Ardulace's lines so that if Xul is inparty, something else happens
+COPY_EXISTING ~udphae01.dlg~ ~override~
+  DECOMPILE_DLG_TO_D
+      REPLACE_TEXTUALLY
+        ~Global("udDrowPlot","GLOBAL",35)~
+        ~Global("udDrowPlot","GLOBAL",35)
+        !InParty("Xulaye")~
+  COMPILE_D_TO_DLG
+BUT_ONLY_IF_IT_CHANGES
+
+
+// Changes conditions in one of Ardulace's lines so that if Xul is inparty, something else happens
+COPY_EXISTING ~udardul.dlg~ ~override~
+  DECOMPILE_DLG_TO_D
+      REPLACE_TEXTUALLY
+        ~Global("udDrowPlot","GLOBAL",35)~
+        ~Global("udDrowPlot","GLOBAL",35)
+        !InParty("Xulaye")~
+  COMPILE_D_TO_DLG
+BUT_ONLY_IF_IT_CHANGES
+
+
+// Changing conditions to drow scripts so city doesn't go hostile when Ardulace dies
+COPY_EXISTING ~dwcity.bcs~ ~override~
+  DECOMPILE_BCS_TO_BAF
+      REPLACE_TEXTUALLY
+        ~Dead("Ardulace")~
+        ~Dead("Ardulace")
+        !InParty("Xulaye")~
+  COMPILE_BAF_TO_BCS
+BUT_ONLY_IF_IT_CHANGES
+
+
+// And another, just in case...
+COPY_EXISTING ~dwplot.bcs~ ~override~
+  DECOMPILE_BCS_TO_BAF
+      REPLACE_TEXTUALLY
+        ~Die()~
+        ~Die()
+        !InParty("Xulaye")~
+  COMPILE_BAF_TO_BCS
+BUT_ONLY_IF_IT_CHANGES
+
+// And Phaere
+COPY_EXISTING ~udphae01.bcs~ ~override~
+  DECOMPILE_BCS_TO_BAF
+      REPLACE_TEXTUALLY
+        ~Global("DrowCityHostile","GLOBAL",0)~
+        ~Global("DrowCityHostile","GLOBAL",0)
+        !InParty("Xulaye")~
+  COMPILE_BAF_TO_BCS
+BUT_ONLY_IF_IT_CHANGES
+
+
+// Compiling dialogue...
+COMPILE ~xulaye_eet/dialogue/lk#xula.d~
+COMPILE ~xulaye_eet/dialogue/lk#xulj.d~
+COMPILE ~xulaye_eet/dialogue/blk#xul.d~
+COMPILE ~xulaye_eet/dialogue/lk#xulp.d~
+COMPILE ~xulaye_eet/dialogue/lk#xben.d~
+COMPILE ~xulaye_eet/dialogue/lk#xquest.d~
+COMPILE ~xulaye_eet/dialogue/lk#xquest2.d~
+COMPILE ~xulaye_eet/dialogue/lk#xulx.d~
+COMPILE ~xulaye_eet/dialogue/lk#xhiv.d~
+
+// Compiling scripts...
+COMPILE ~xulaye_eet/scripts/lk#xula.baf~
+COMPILE ~xulaye_eet/scripts/lk#xulai.baf~
+COMPILE ~xulaye_eet/scripts/lk#xben.baf~
+COMPILE ~xulaye_eet/scripts/lk#xmes.baf~
+COMPILE ~xulaye_eet/scripts/lk#xgk.baf~
+COMPILE ~xulaye_eet/scripts/lk#xcut1.baf~
+COMPILE ~xulaye_eet/scripts/lk#xcut2.baf~
+COMPILE ~xulaye_eet/scripts/lk#xcut3.baf~
+COMPILE ~xulaye_eet/scripts/lk#xcut4.baf~
+COMPILE ~xulaye_eet/scripts/lk#xcut5.baf~
+COMPILE ~xulaye_eet/scripts/lk#xcut6.baf~
+COMPILE ~xulaye_eet/scripts/lk#xcut7.baf~
+COMPILE ~xulaye_eet/scripts/lkxtem.baf~
+COMPILE ~xulaye_eet/scripts/lkxdem.baf~
+COMPILE ~xulaye_eet/scripts/lkxdem1.baf~
+COMPILE ~xulaye_eet/scripts/lk#xdem2.baf~
+EXTEND_BOTTOM ~ar2100.bcs~   ~xulaye_eet/scripts/lk#ar2100.baf~
+EXTEND_BOTTOM ~ar2200.bcs~   ~xulaye_eet/scripts/lk#ar2200.baf~
+EXTEND_BOTTOM ~ar2201.bcs~   ~xulaye_eet/scripts/lk#ar2201.baf~
+EXTEND_BOTTOM ~ar2202.bcs~   ~xulaye_eet/scripts/lk#ar2202.baf~
+EXTEND_BOTTOM ~baldur.bcs~   ~xulaye_eet/scripts/lk#baldur.baf~
+EXTEND_BOTTOM ~udsoltri.bcs~ ~xulaye_eet/scripts/lk#udsoltri.baf~
+EXTEND_TOP ~udardul.bcs~  ~xulaye_eet/scripts/lk#udardul.baf~
+
+COPY ~xulaye_eet/imagesEE~ ~override~
+
+COPY ~xulaye_eet/creatures/lk#xula.cre~ ~override/lk#xula.cre~
+  SAY NAME1 @15
+  SAY NAME2 @16
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~Xulaye~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+  SAY BIO @17
+  SAY MORALE @18 
+  SAY LEADER @19 
+  SAY TIRED @20 
+  SAY BORED @21 
+  SAY BATTLE_CRY1 @22 
+  SAY BATTLE_CRY2 @23 
+  SAY BATTLE_CRY3 @24 
+  SAY BATTLE_CRY4 @25 
+  SAY BATTLE_CRY5 @26 
+  SAY DYING @27 
+  SAY HURT @28 
+  SAY AREA_DUNGEON @29 
+  SAY SELECT_COMMON1 @30 
+  SAY SELECT_COMMON2 @31 
+  SAY SELECT_COMMON3 @32 
+  SAY SELECT_COMMON4 @33 
+  SAY SELECT_COMMON5 @34 
+  SAY SELECT_COMMON6 @35 
+  SAY SELECT_ACTION1 @36 
+  SAY SELECT_ACTION2 @37 
+  SAY SELECT_ACTION3 @38 
+  SAY SELECT_ACTION4 @39 
+  SAY SELECT_ACTION5 @40 
+  SAY SELECT_ACTION6 @41 
+  SAY SELECT_ACTION7 @42 
+  SAY SELECT_RARE1 @43 
+  SAY SELECT_RARE2 @44 
+  SAY CRITICAL_HIT @45 
+  SAY CRITICAL_MISS @46 
+  SAY TARGET_IMMUNE @47 
+  SAY INVENTORY_FULL @48 
+  SAY HAPPY @49 
+  SAY UNHAPPY_ANNOYED @50 
+  SAY UNHAPPY_SERIOUS @51 
+  SAY SPELL_DISRUPTED @52 
+  SAY SET_A_TRAP @53 
+  SAY HIDDEN_IN_SHADOWS @54 
+  SAY PICKED_POCKET @55 
+
+
+// Copies and patches new creatures
+COPY_EXISTING ~lk#xula.cre~ ~override/lk#xul1.cre~
+  WRITE_EVALUATED_ASCII DIALOG          ~LK#XULX~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~Xulaye1~ #32
+
+COPY_EXISTING ~uddemon.cre~ ~override~
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+
+COPY_EXISTING ~udimrae.cre~ ~override/lk#xben.cre~
+  SAY                   NAME1           @56
+  SAY                   NAME2           @57
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+
+COPY_EXISTING ~UDDROW34.cre~ ~override/lk#xtar.cre~
+  SAY                   NAME1           @58
+  SAY                   NAME2           @59
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+  
+COPY_EXISTING ~UDDROW34.cre~ ~override/lk#xmes.cre~
+  SAY                   NAME1           @60
+  SAY                   NAME2           @60
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+  
+COPY_EXISTING ~UDARDUL.cre~ ~override/lk#xlar.cre~
+  SAY                   NAME1           @61
+  SAY                   NAME2           @61
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+
+COPY_EXISTING ~UDDROW01.cre~ ~override/lk#xmg1.cre~
+  SAY                   NAME1           @62
+  SAY                   NAME2           @62
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_CLASS    ~%DEST_RES%~ #8
+  
+COPY_EXISTING ~UDDROW01.cre~ ~override/lk#xmg2.cre~
+  SAY                   NAME1           @62
+  SAY                   NAME2           @62
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_CLASS    ~%DEST_RES%~ #8
+
+COPY_EXISTING ~UDDOOR01.cre~ ~override/lk#xft1.cre~
+  SAY                   NAME1           @63
+  SAY                   NAME2           @63
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII SCRIPT_CLASS    ~%DEST_RES%~ #8
+
+COPY_EXISTING ~UDDOOR02.cre~ ~override/lk#xft2.cre~
+  SAY                   NAME1           @63
+  SAY                   NAME2           @63
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+
+COPY_EXISTING ~UDDOOR03.cre~ ~override/lk#xft3.cre~
+  SAY                   NAME1           @63
+  SAY                   NAME2           @63
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+
+COPY_EXISTING ~UDDOOR05.cre~ ~override/lk#xwz1.cre~
+  SAY                   NAME1           @64
+  SAY                   NAME2           @64
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+
+COPY_EXISTING ~UDDOOR06.cre~ ~override/lk#xpr1.cre~
+  SAY                   NAME1           @65
+  SAY                   NAME2           @65
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  
+COPY_EXISTING ~UDDOOR07.cre~ ~override/lk#xsk1.cre~
+  SAY                   NAME1           @66
+  SAY                   NAME2           @66
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+
+COPY_EXISTING ~UDDOOR08.cre~ ~override/lk#xth1.cre~
+  SAY                   NAME1           @63
+  SAY                   NAME2           @63
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+
+COPY_EXISTING ~UDDOOR09.cre~ ~override/lk#xth2.cre~
+  SAY                   NAME1           @63
+  SAY                   NAME2           @63
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  
+COPY_EXISTING ~UDDROW03.cre~ ~override/lk#xtm1.cre~
+  SAY                   NAME1           @67
+  SAY                   NAME2           @67
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+
+COPY_EXISTING ~UDDROW03.cre~ ~override/lk#xtm2.cre~
+  SAY                   NAME1           @67
+  SAY                   NAME2           @67
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+  
+COPY_EXISTING ~UDDROW03.cre~ ~override/lk#xtm3.cre~
+  SAY                   NAME1           @67
+  SAY                   NAME2           @67
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+
+COPY_EXISTING ~UDDROW03.cre~ ~override/lk#xtm4.cre~
+  SAY                   NAME1           @67
+  SAY                   NAME2           @67
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~%DEST_RES%~ #8
+  
+COPY_EXISTING ~UDDOOR01.cre~ ~override/lk#xgk1.cre~
+  SAY                   NAME1           @68
+  SAY                   NAME2           @63
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~lk#xgk~     #8
+  WRITE_EVALUATED_ASCII SCRIPT_CLASS    ~%DEST_RES%~ #8
+  WRITE_BYTE 0x002e 45
+  
+COPY_EXISTING ~UDDOOR01.cre~ ~override/lk#xgk2.cre~
+  SAY                   NAME1           @68
+  SAY                   NAME2           @63
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~lk#xgk~     #8
+  WRITE_EVALUATED_ASCII SCRIPT_CLASS    ~%DEST_RES%~ #8
+  WRITE_BYTE 0x002e 45
+  
+COPY_EXISTING ~UDDOOR01.cre~ ~override/lk#xgk3.cre~
+  SAY                   NAME1           @68
+  SAY                   NAME2           @63
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~lk#xgk~     #8
+  WRITE_EVALUATED_ASCII SCRIPT_CLASS    ~%DEST_RES%~ #8
+  WRITE_BYTE 0x002e 45
+  
+COPY_EXISTING ~UDDOOR01.cre~ ~override/lk#xgk4.cre~
+  SAY                   NAME1           @68
+  SAY                   NAME2           @63
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~lk#xgk~     #8
+  WRITE_EVALUATED_ASCII SCRIPT_CLASS    ~%DEST_RES%~ #8
+  WRITE_BYTE 0x002e 45
+
+COPY_EXISTING ~UDDOOR01.cre~ ~override/lk#xgk5.cre~
+  SAY                   NAME1           @68
+  SAY                   NAME2           @63
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~lk#xgk~     #8
+  WRITE_EVALUATED_ASCII SCRIPT_CLASS    ~%DEST_RES%~ #8
+  WRITE_BYTE 0x002e 45
+
+COPY_EXISTING ~SPIDSM01.cre~ ~override/lk#xsp1.cre~
+  SAY                   NAME1           @69
+  SAY                   NAME2           @69
+  WRITE_EVALUATED_ASCII DEATHVAR        ~lk#xspid~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~lk#xsp1~ #8
+  
+COPY_EXISTING ~SPIDGI01.cre~ ~override/lk#xsp2.cre~
+  SAY                   NAME1           @70
+  SAY                   NAME2           @70
+  WRITE_EVALUATED_ASCII DEATHVAR        ~lk#xspid~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~lk#xsp1~ #8
+
+COPY_EXISTING ~SPIDPH01.cre~ ~override/lk#xsp3.cre~
+  SAY                   NAME1           @71
+  SAY                   NAME2           @71
+  WRITE_EVALUATED_ASCII DEATHVAR        ~lk#xspid~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~lk#xsp1~ #8
+  
+COPY_EXISTING ~SPIDSW01.cre~ ~override/lk#xsp4.cre~
+  SAY                   NAME1           @72
+  SAY                   NAME2           @72
+  WRITE_EVALUATED_ASCII DEATHVAR        ~lk#xspid~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~lk#xsp1~ #8
+  
+COPY_EXISTING ~SPIDVO01.cre~ ~override/lk#xsp5.cre~
+  SAY                   NAME1           @73
+  SAY                   NAME2           @73
+  WRITE_EVALUATED_ASCII DEATHVAR        ~lk#xspid~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~lk#xsp2~ #8
+
+COPY_EXISTING ~SPPAIN.cre~ ~override/lk#xhiv.cre~
+  SAY                   NAME1           @74
+  SAY                   NAME2           @74
+  WRITE_EVALUATED_ASCII DIALOG          ~%DEST_RES%~ #8
+  WRITE_EVALUATED_ASCII DEATHVAR        ~%DEST_RES%~ #32
+  WRITE_EVALUATED_ASCII SCRIPT_OVERRIDE ~~ #8
+  ADD_CRE_ITEM ~staf09~ #0 #0 #0 ~IDENTIFIED~ ~WEAPON1~ EQUIP
+  ADD_CRE_ITEM ~potn20~ #0 #0 #0 ~IDENTIFIED~ ~INV5~ EQUIP
+
+
+
+// Items
+COPY_EXISTING ~misc9v.itm~ ~override/lk#xeggs.itm~
+ SAY NAME1 @75
+ SAY NAME2 @75
+ SAY UNIDENTIFIED_DESC @76
+ SAY DESC @76
+
+
+COPY_EXISTING ~CHAN06.itm~ ~override/lk#xarm.itm~
+ SAY NAME1 @77
+ SAY NAME2 @78
+ SAY UNIDENTIFIED_DESC @79
+ SAY DESC @80
+
+
+COPY ~xulaye_eet/items/lk#xclk.itm~ ~override~
+ SAY NAME1 @81
+ SAY NAME2 @81
+ SAY UNIDENTIFIED_DESC @82
+ SAY DESC @83
+
+
+
+// NPC file Appends
+APPEND ~interdia.2da~ ~XULAYE BLK#XUL~
+   UNLESS ~XULAYE~
+
+APPEND ~pdialog.2da~ ~XULAYE LK#XULP LK#XULJ LK#XULD~
+  UNLESS ~XULAYE~
+
+
+// Appending the master area file
+APPEND ~MastArea.2da~
+  ~LKXDEM  value~
+UNLESS ~LKXDEM~
+
+APPEND ~MastArea.2da~
+  ~LKXTEM  value~
+UNLESS ~LKXTEM~
+
+
+// Moving area files
+COPY ~xulaye_eet/areas/lkxdem.are~   ~override~
+COPY ~xulaye_eet/areas/lkxdemht.bmp~ ~override~
+COPY ~xulaye_eet/areas/lkxdemlm.bmp~ ~override~
+COPY ~xulaye_eet/areas/lkxdemsr.bmp~ ~override~
+COPY ~xulaye_eet/areas/lkxdem.mos~   ~override~
+COPY ~xulaye_eet/areas/lkxdem.wed~   ~override~
+COPY ~xulaye_eet/areas/lkxtem.are~   ~override~
+COPY ~xulaye_eet/areas/lkxtemht.bmp~ ~override~
+COPY ~xulaye_eet/areas/lkxtemlm.bmp~ ~override~
+COPY ~xulaye_eet/areas/lkxtemsr.bmp~ ~override~
+COPY ~xulaye_eet/areas/lkxtem.mos~   ~override~
+COPY ~xulaye_eet/areas/lkxtem.wed~   ~override~
+COPY ~xulaye_eet/PVRZ~   ~override~
+
+COPY ~xulaye_eet/audio~ ~override~
+
+COMPILE ~xulaye_eet/dialogue/lk#xpid.d~
+
+// Korgan Goes to the Pits
+
+  COMPILE ~xulaye_eet/dialogue/korganj.d~
+  COMPILE ~xulaye_eet/dialogue/korganp.d~
+
+  EXTEND_BOTTOM ~korgan.bcs~ ~xulaye_eet/scripts/lk#korgan.baf~

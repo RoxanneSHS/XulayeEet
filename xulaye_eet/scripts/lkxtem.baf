@@ -1,0 +1,72 @@
+// -------------------------------------
+// LK#XTEM script
+// -------------------------------------
+
+// Creating guards
+IF
+    Global("LK#XTEM_creatures","LKXTEM",0)
+THEN
+    RESPONSE #100
+    SetGlobal("LK#XTEM_creatures","LKXTEM",1)
+    CreateCreature("lk#xtm1",[965.1331],5)
+    CreateCreature("lk#xtm2",[1099.1389],5)
+    CreateCreature("lk#xtm3",[1526.981],10)
+    CreateCreature("lk#xtm4",[1385.879],10)
+    CreateCreature("lk#xul1",[1406.969],2)
+    ActionOverride("lk#xtm1",FaceObject("Xulaye"))
+    ActionOverride("lk#xtm2",FaceObject("Xulaye"))
+    ActionOverride("lk#xtm3",FaceObject("Xulaye"))
+    ActionOverride("lk#xtm4",FaceObject("Xulaye"))
+    ActionOverride("Xulaye1",FaceObject(Player1))
+END
+
+// Winning scene
+IF
+    Global("LK#XulayeWins","GLOBAL",3)
+THEN
+  RESPONSE #100
+    Wait(1)
+    ActionOverride("Xulaye1",StartDialogueNoSet(Player1))
+END
+
+
+IF
+    Global("LK#XulayeWins","GLOBAL",4)
+THEN
+  RESPONSE #100
+    Wait(5)
+    ActionOverride("Xulaye1",StartDialogueNoSet(Player1)
+END 
+
+
+// Erasing journal entries...
+IF
+    Global("LK#XulEraseUDJournal","GLOBAL",1)
+THEN
+  RESPONSE #100
+    EraseJournalEntry(5810)
+    EraseJournalEntry(6535)
+    EraseJournalEntry(16529)
+    EraseJournalEntry(6943)
+    EraseJournalEntry(16339)
+    EraseJournalEntry(9649)
+    EraseJournalEntry(6405)
+    EraseJournalEntry(6403)
+    EraseJournalEntry(6590)
+    EraseJournalEntry(7147)
+    EraseJournalEntry(7148)
+    EraseJournalEntry(15793)
+    EraseJournalEntry(15792)
+    EraseJournalEntry(23424)
+    EraseJournalEntry(@3)
+    EraseJournalEntry(@4)
+    EraseJournalEntry(@5)
+    EraseJournalEntry(@6)
+    EraseJournalEntry(@7)
+    EraseJournalEntry(@8)
+    EraseJournalEntry(@9)
+    EraseJournalEntry(@10)
+    EraseJournalEntry(@11)
+    EraseJournalEntry(@12)
+    IncrementGlobal("LK#XulEraseUDJournal","GLOBAL",1)
+END

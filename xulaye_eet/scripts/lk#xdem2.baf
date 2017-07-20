@@ -1,0 +1,18 @@
+// Inter-area travel
+IF
+    Clicked([ANYONE])
+    Global("LK#XDemOpen","GLOBAL",0)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Player1,@1)
+END
+
+IF
+    Clicked([ANYONE])
+    Global("LK#XDemOpen","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("lk#xcut7")
+END

@@ -1,0 +1,8 @@
+IF
+    Global("LK#XulayeWins","GLOBAL",1)
+    !Dead("UDDEMON")
+THEN
+  RESPONSE #100
+    ForceSpell("UDDEMON",WIZARD_DIMENSION_DOOR)
+    DestroySelf()
+END

@@ -1,0 +1,70 @@
+// ---------------------------------------
+// Xulaye AR2200 additions
+// ---------------------------------------
+
+IF 
+    Global("LK#XulayeExists","AR2200",0)
+THEN
+  RESPONSE #100
+    SetGlobal("LK#XulayeExists","AR2200",1)
+    CreateCreature("lk#xula",[1490.3263],3)
+END
+
+
+// Adds Kii'Ret warriors in place in Ust Natha
+IF
+    Global("LK#XulayeSecuredCity","GLOBAL",2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("LK#XulayeSecuredCity","GLOBAL",1)
+    CreateCreature("lk#xgk5",[1278.3003],5)
+    CreateCreature("lk#xgk5",[1343.3480],13)
+    CreateCreature("lk#xgk5",[2558.2100],6)
+    CreateCreature("lk#xgk5",[3861.1108],2)
+    CreateCreature("lk#xgk5",[4144.441],5)
+    CreateCreature("lk#xgk5",[1963.1594],5)
+    CreateCreature("lk#xgk5",[4074.2456],5)
+    CreateCreature("lk#xgk5",[4127.2508],5)
+END
+
+
+// Xulaye left party angry confrontation...
+IF
+    Global("LK#XulayeLeftAngry","GLOBAL",1)
+    !Dead("Imrae")
+THEN
+  RESPONSE #100
+    IncrementGlobal("LK#XulayeLeftAngry","GLOBAL",1)
+    CreateCreature("lk#xul1",[1160.3074],5)
+    CreateCreature("udimrae",[1109.3100],3)
+    CreateCreature("lk#xft1",[1213.3050],7)
+    CreateCreature("lk#xft2",[1118.3018],2)
+    CreateCreature("lk#xwz1",[1212.3002],1)
+    CreateCreature("lk#xpr1",[1044.3079],11)
+    CreateCreature("lk#xsk1",[1231.3104],2)
+    CreateCreature("lk#xsk1",[1055.3123],4)
+    ActionOverride("Xulaye1",MoveToPoint([1180.3385]))
+    ActionOverride("Imrae",MoveToPoint([1224.3429]))
+END
+
+IF
+    Global("LK#XulEnemy","GLOBAL",1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("LK#XulEnemy","GLOBAL",1)
+    ActionOverride("lk#xft1",Enemy())
+    ActionOverride("lk#xft2",Enemy())
+    ActionOverride("lk#xwz1",Enemy())
+    ActionOverride("lk#xpr1",Enemy())
+    ActionOverride("lk#xsk1",Enemy())
+END
+
+
+// Closing the gates
+IF  
+    Global("LK#XulayeWins","GLOBAL",5)
+THEN
+  RESPONSE #100
+    TriggerActivation("TRAN2201",FALSE)
+    IncrementGlobal("LK#XulayeWins","GLOBAL",1)
+END

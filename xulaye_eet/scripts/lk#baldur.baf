@@ -1,0 +1,33 @@
+// Erasing Xulaye/Underdark journal entries
+IF
+    Global("LK#XulEraseUDJournal","GLOBAL",1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("LK#XulEraseUDJournal","GLOBAL",1)
+    EraseJournalEntry(5810)
+    EraseJournalEntry(6535)
+    EraseJournalEntry(16529)
+    EraseJournalEntry(6943)
+    EraseJournalEntry(16339)
+    EraseJournalEntry(9649)
+    EraseJournalEntry(6405)
+    EraseJournalEntry(6403)
+    EraseJournalEntry(6590)
+    EraseJournalEntry(@0)
+    EraseJournalEntry(7147)
+    EraseJournalEntry(7148)
+    EraseJournalEntry(15793)
+    EraseJournalEntry(15792)
+    EraseJournalEntry(15797)
+    EraseJournalEntry(23424)
+END
+
+
+// Erasing Xulaye journal entries
+IF
+    Global("LK#XulEraseJournal","GLOBAL",1)
+THEN
+  RESPONSE #100
+    IncrementGlobal("LK#XulEraseJournal","GLOBAL",1)
+    EraseJournalEntry(@0)
+END

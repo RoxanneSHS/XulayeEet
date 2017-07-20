@@ -1,0 +1,89 @@
+// Spiders: First wave
+IF
+    Global("LK#XDEM_spiders","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("LK#XDEM_spiders","GLOBAL",1)
+    CreateCreature("lk#xsp3",[255.352],5)
+    CreateCreature("lk#xsp1",[213.400],5)
+    CreateCreature("lk#xsp2",[305.422],5)
+    CreateCreature("lk#xsp1",[272.466],5)
+    CreateCreature("lk#xsp2",[366.469],5)
+    CreateCreature("lk#xsp2",[330.423],5)
+    CreateCreature("lk#xsp1",[329.569],5)
+    CreateCreature("lk#xsp1",[392.524],5)
+    CreateCreature("lk#xsp3",[352.664],5)
+    CreateCreature("lk#xsp3",[427.506],5)
+// 10 (top left)
+    CreateCreature("lk#xsp1",[255.352],5)
+    CreateCreature("lk#xsp2",[213.400],5)
+    CreateCreature("lk#xsp2",[305.422],5)
+    CreateCreature("lk#xsp1",[272.466],5)
+    CreateCreature("lk#xsp2",[366.469],5)
+    CreateCreature("lk#xsp3",[330.423],5)
+    CreateCreature("lk#xsp2",[329.569],5)
+    CreateCreature("lk#xsp2",[392.524],5)
+    CreateCreature("lk#xsp1",[352.664],5)
+    CreateCreature("lk#xsp3",[427.506],5)
+// 10 (bottom right)
+    CreateCreature("lk#xsp1",[462.1452],5)
+    CreateCreature("lk#xsp1",[407.1496],5)
+    CreateCreature("lk#xsp2",[472.1494],5)
+    CreateCreature("lk#xsp3",[457.1579],5)
+    CreateCreature("lk#xsp1",[299.1734],5)
+    CreateCreature("lk#xsp4",[358.1728],5)
+    CreateCreature("lk#xsp2",[282.1778],5)
+    CreateCreature("lk#xsp1",[331.1780],5)
+    CreateCreature("lk#xsp1",[279.1839],5)
+    CreateCreature("lk#xsp2",[436.1672],5)
+    CreateCreature("lk#xsp1",[776.1770],5)
+    CreateCreature("lk#xsp2",[822.1707],5)
+    CreateCreature("lk#xsp2",[820.1813],5)
+    CreateCreature("lk#xsp1",[958.1810],5)
+// 14 (bottom left) (from top left, down, then right)
+END
+
+IF
+    Global("LK#XDEM_spiders","GLOBAL",1)
+    NumDeadGT("lk#xspid",15)
+THEN
+  RESPONSE #100
+    IncrementGlobal("LK#XDEM_spiders","GLOBAL",1)
+    CreateCreature("lk#xsp2",[255.352],5)
+    CreateCreature("lk#xsp3",[213.400],5)
+    CreateCreature("lk#xsp3",[305.422],5)
+    CreateCreature("lk#xsp2",[272.466],5)
+    CreateCreature("lk#xsp4",[366.469],5)
+    CreateCreature("lk#xsp4",[330.423],5)
+
+    CreateCreature("lk#xsp4",[2008.1750],5)
+    CreateCreature("lk#xsp3",[1963.1777],5)
+    CreateCreature("lk#xsp3",[1863.1786],5)
+    CreateCreature("lk#xsp5",[1892.1718],5)
+    CreateCreature("lk#xsp2",[1903.1663],5)
+    CreateCreature("lk#xsp3",[1825.1680],5)
+
+    CreateCreature("lk#xsp2",[462.1452],5)
+    CreateCreature("lk#xsp3",[407.1496],5)
+    CreateCreature("lk#xsp2",[472.1494],5)
+    CreateCreature("lk#xsp1",[457.1579],5)
+    CreateCreature("lk#xsp3",[299.1734],5)
+    CreateCreature("lk#xsp1",[358.1728],5)
+    CreateCreature("lk#xsp5",[282.1778],5)
+    CreateCreature("lk#xsp2",[331.1780],5)
+// 20
+    ActionOverride(Player1,CreateCreature("lk#xhiv",[1303.1010],5))
+    ActionOverride("lk#xhiv",ReallyForceSpell("lk#xhiv",WIZARD_DIMENSION_DOOR))
+    Wait(2)
+    ActionOverride("lk#xhiv",StartDialogueNoSet([PC]))
+END
+
+// Letting players leave the area...
+IF
+    Global("LK#XOpen","GLOBAL",0)
+    NumDeadGT("lk#xspid",30)
+    Dead("lk#xhiv")
+THEN
+  RESPONSE #100
+    SetGlobal("LK#XDemOpen","GLOBAL",1)
+END

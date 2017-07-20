@@ -1,0 +1,93 @@
+@0    = ~I see Xulaye is not with you; did the rodent finally get what she deserved?  Glorious, glorious day!  I have been wanting to be rid of her for years.~
+@1    = ~I see Xulaye is not with you; did the rodent finally get what she deserved?  Glorious, glorious day!  I have been wanting to be rid of her for years.  Wait...~
+@2    = ~I have a plan... a plan that will place me as the head of House Despana even as we take our place as the rightful ruling House of Ust Natha.~
+@3    = ~I am sure you have, Solaufein.~
+@4    = ~I would have a word with you, <CHARNAME>...away from suspicious ears.~
+@5    = ~There's hardly a need for secrecy, Solaufein.  I have far more reasons to want Phaere dead than yourself.~
+@6    = ~True enough.  Fine, then.  <CHARNAME>, I do not know your purpose, or if you will listen to me.  But I have something to offer...  something to give that treacherous wench, Phaere, what she deserves.~
+@7    = ~Hmph.  What is it now, Solaufein?~
+@8    = ~True enough.  Fine, then.  <CHARNAME>, you did not tell me your reason for being here in the drow city, but I may know.  I followed Phaere and saw she had copies of the dragon's eggs created.~
+@9    = ~Wait!~
+@10   = ~<CHARNAME>, consider what he is offering.  With these eggs, we have an opportunity to foil Phaere's plans, and ruin *her* chances at becoming Matron.  We must take them!~
+@11   = ~You have a point, I suppose.~
+@12   = ~I don't *have* to do anything.~
+@13   = ~I will not betray Phaere!~
+@14   = ~Give us the eggs, Solaufein.~
+@15   = ~Yes, as soon as the sky falls and this city becomes dust.~
+@16   = ~Enough with this foolishness!  You have something that will help our plan, and we have agreed to accept it.  Give them to us!~
+@17   = ~(sigh) As you wish.  <CHARNAME>, take the eggs; they will serve your purpose well.~
+@18   = ~I'm sure they will.  Thank you, Solaufein.~
+@19   = ~I will not take them!  Xulaye, I have told you this!~
+@20   = ~You will--we *must* take these eggs, <CHARNAME>.  We must, or Phaere will never get what she so richly deserves!~
+@21   = ~Fine--I will take them if I must.~
+@22   = ~I will not take them!~
+@23   = ~Then our association is over.  If I had more power at my disposal, surfacer...you would regret this decision greatly.  But I am not stupid enough to think I could kill you and your group without my death as a consequence.  Phaere champions you, and much as I despise her she has more influence than I.~
+@24   = ~But if it is ever within my power, <CHARNAME>, you will come to regret this decision.~
+@25   = ~Do you think it wise to have made yourself such an enemy, <CHARNAME>?~
+@26   = ~I think it unfortunate you will not take the eggs, but it is not my decision.  Good fortune to you, surfacer, and good luck.~
+@27   = ~Here you go.  (give Xulaye's eggs)~
+@28   = ~So these are the silver dragon's eggs?  Yes, they must be.  Thank you, Veldrin... you have performed well.~
+@29   = ~The Drow Summoning Ritual
+
+I gave Phaere the eggs that Xulaye had given me... and it seems that she has been fooled into thinking they are the real ones.  The real eggs are still in my possession... and both Phaere and Matron Ardulace think they have the real eggs for the upcoming ritual.
+Phaere has gone onwards to the Temple of Lolth and has commanded me to follow right away.~
+@30   = ~WHAT?!  Veldrin is...is a surface <PRO_RACE>?  What is the meaning of this, Xulaye?!~
+@31   = ~I had no idea, Matron!  They have lied and deceived us all!  Throw them to the pits!~ [lk#xul54]
+@32   = ~Excuse me for interrupting this little shouting match, but Xulaye knew, and planned to use us to kill you, Matron.~
+@33   = ~You know something?  I think it's high time for the lot of you to die!~
+@34   = ~Xulaye, we can take them--you take Phaere, we'll take the demon and Ardulace!~
+@35   = ~Xulaye, we can take them--you take Ardulace and we'll take the demon!~
+@36   = ~You can throw us wherever you like, but you should know Xulaye was planning to kill you.~
+@37   = ~Is this so, daughter?!~
+@38   = ~They are filthy, lying surfacers, Matron!  You cannot possibly believe them!~
+@39   = ~I would hardly think it above you, daughter.  I have watched your schemes for many years--this WAS your plan!~
+@40   = ~But I do.  Her behavior of late has been strange, erratic; I had similar suspicions myself, Matron.~
+@41   = ~Then it is decided--you will pay for this betrayal, Xulaye!~
+@42   = ~Enjoy the webs, sister.  May your death be slow and *extremely* painful.~
+@43   = ~DESTROY THEM, LORD OF DARKNESS!!  SEND THEM TO THE PITS!~
+@44   = ~** IT SHALL BE A PLEASURE. **~
+@45   = ~You cannot!  NOOO!!  NOOOOOOOOOO!!!!~ [lk#xul55]
+@46   = ~You have assured your own death, idiotic <PRO_MALEFEMALE>!~
+@47   = ~DESTROY THE SURFACERS, LORD OF DARKNESS!!  KILL THEM ALL!!~
+@48   = ~Familial Intrigue
+  
+I attacked Ardulace and her entourage when it was discovered I was a surfacer, and typically Xulaye has betrayed me, aligning herself with her mother.  But no matter; they will all be dead before long, no doubt.~
+@49   = ~(growl) I suppose we have no choice at this point--prepare to die, mother, sister!  I have sat at your feet licking your heels for far too long!  I *WILL* be ruler of this city, and you will be in the dust where you belong!~ [lk#xul56]
+@50   = ~(growl) I suppose we have no choice at this point--prepare to die, mother!  I have sat at your feet licking your heels for far too long!  I *WILL* be ruler of this city, and you will be in the dust where you belong!~ [lk#xul95]
+@51   = ~I have secured the city; once you are dead, I will rule.  Nobody will dare to challenge my authority!~
+@52   = ~I suppose it was only a matter of time before you snapped and became a megalomaniac, daughter.~
+@53   = ~Destroy them, Lord of Darkness! Make them SUFFER!!~
+@54   = ~Familial Intrigue
+  
+After my surfacer heritage was unveiled by the demon, we attacked.  If all goes well, Xulaye will have Ust Natha within mere hours.~
+@55   = ~You will find I have secured the city; once you are both dead, I will rule.  Nobody will challenge me!~
+@56   = ~Warriors, reveal yourselves!~
+@57   = ~V-Veldrin?!  Not a drow at all, but a... a surface <PRO_RACE>?!  Infiltrator?!   What is the meaning of this, Xulaye?!~
+@58   = ~Well, dear sister, it is all part of a plot to instate myself as Matron Mother of House Despana--and secure Ust Natha.~
+@59   = ~Get out of the way, Phaere.~
+@60   = ~Have you gone COMPLETELY insane?!~
+@61   = ~Possibly, but am I not the one about to have you killed, take our mother's position and acquire the power you so dearly wanted for yourself?~
+@62   = ~You will find I have secured the city; once you are dead, I will rule.  Nobody will challenge me!~
+@63   = ~NOOO!!  You will not get far!  I will have your head for this, Xulaye!!~
+@64   = ~DEMON LORD, GUARDS... KILL THEM ALL!!~
+@65   = ~You will not get away with this, daughter!  Guards, Lord of Darkness--KILL THEM ALL!!~
+@66   = ~** IT SHALL BE A PLEASURE TO DESTROY THE BHAAL-CHILD. **~
+@67   = ~Yes, yes, I am sure.  While I am thankful for your--aid, such as it was, demon, begone from this place.  Your summoner is dead; there is nothing more for you here.~
+@68   = ~While I am thankful for your--aid, such as it was, demon, feel free.  I require nothing from you.~
+@69   = ~** SO BE IT.  MORTALS ARE EVER FOOLS. **~
+@70   = ~You...you...I cannot...~ [lk#xul57]
+@71   = ~I...I must escape here.  You...~
+@72   = ~You will die a painful death here, you disease-ridden, ugly, moronic surfacer.  The spiders will ensure that.~
+@73   = ~Die slowly, worm.~
+@74   = ~Familial Intrigue
+  
+After it was discovered I was a surfacer and Xulaye had prior knowledge of the fact, we have all been taken to what Matron Larace called "the pits."  Xulaye has left us to fend for ourselves, saying only that she hopes we die painfully.  To be expected of a drow, I suppose.~
+@75   = ~And so I take my rightful place.  Guards!  GUARDS!!~
+@76   = ~Here are the eggs you so dearly wanted, Veldrin--and with Phaere's death, I take my rightful place.~
+@77   = ~Guards!  GUARDS!!~
+@78   = ~Yes, mistress?~ [lk#blnk]
+@79   = ~Where--where is Matron Ardulace?~
+@80   = ~Regrettably, my mother was killed in the ritual.  As is the law, I am now Matron Mother of Ust Natha, being next in succession.~
+@81   = ~I--understood, Matron Xulaye.  I will have the citizens informed and the ceremony prepared immediately.~
+@82   = ~Good.  See to it that anyone protesting my rule is killed, and ensure that knowledge of their death is circulated.  I want the changeover to be as smooth as possible.~
+@83   = ~It shall be as you say, Matron.~

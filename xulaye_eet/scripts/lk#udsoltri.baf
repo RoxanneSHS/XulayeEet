@@ -1,0 +1,20 @@
+// ---------------------------------------------
+// Additional Xulaye dialogue if Sola is dead
+// ---------------------------------------------
+
+IF
+    IsOverMe([ANYONE])
+    Global("SolaufeinJob","GLOBAL",8)
+    Global("PhaereJob","GLOBAL",10)
+    Global("DrowCityHostile","GLOBAL",0)
+    InParty("Xulaye")
+    !Dead("Xulaye")
+    OR(2)
+      Dead("Solaufein")
+      GlobalLT("SolaufeinLikes","GLOBAL",1)
+    Global("LK#XulGivesEggs","GLOBAL",0)
+THEN
+  RESPONSE #100
+    Wait(2)
+    SetGlobal("LK#XulGivesEggs","GLOBAL",1)
+END

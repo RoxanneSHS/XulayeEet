@@ -1,0 +1,14 @@
+// -------------------------------------
+// Override Script for lk#xmes (Drow Messenger/Envoy Ikaxan)
+// -------------------------------------
+
+// Joining dialogue
+IF
+    NumTimesTalkedTo(0)
+    Global("LK#XulQuest","GLOBAL",2)
+THEN
+  RESPONSE #100
+    MakeGlobal()
+    MoveToObject("Xulaye")
+    StartDialogueNoSet("Xulaye")
+END

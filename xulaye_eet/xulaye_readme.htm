@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style type="text/css">
+    /*<![CDATA[*/
+    <!-- 
+      body {
+        margin: 0;
+        padding: 0;
+        cursor: default;
+        text-align: center;
+        color: #000;
+        background: #e3e3db url('http://spellholdstudios.net/images/sh_bg_main.jpg');
+      }
+      
+      #wrap {
+        text-align: left;
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 88%;
+        font-family: Verdana, Tahoma, Arial, sans-serif;
+        font-size: 12px;
+        color: #333;
+      }
+      
+      #header {
+        text-align: center;
+        background: #e5e5e5;
+        border: 1px solid #781808;
+        border-top: 5px solid #781808;
+        border-bottom: 5px solid #781808;
+        padding: 5px 0 13px 0;
+      }
+      
+      #header .about {
+        margin: 7px 0 0 0;
+        padding: 0;
+        font-style: italic;
+        color: #555;
+      }
+      
+      #header .menu {
+        font-weight: bold;
+        margin: 0;
+        color: #999;
+      }
+      
+      #header .menu a:link,
+      #header .menu a:visited {
+        color: #333;
+      }
+      
+      #maindiv {
+        margin: 0 auto;
+        margin-top: -20px;
+        width: 80%;
+      }
+      
+      #maindiv .content {
+        counter-increment: kman;
+        counter-reset: h2;
+        background-color: #e8e8e6;
+        padding: 0 0 25px 0;
+        margin: 50px auto;
+        border-width: 1px 1px 4px 10px;
+        border-style: solid;
+        border-color: #781808;
+        position: relative;
+        display: block;
+      }
+      
+      #maindiv .content::before {
+        content: counter(kman, lower-roman);
+        font-size: 100%;
+        font-weight: bold;
+        text-align: center;
+        color: #eee;
+        background-color: #781808;
+        width: 35px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        display: block;
+      }
+      
+      h2 {
+        display: block;
+        font-family: Verdana, Trebuchet MS, Arial, serif;
+        text-align: left;
+        text-indent: 30px;
+        padding: 0px;
+        margin: 20px 0 0 0;
+        border-bottom: dotted 2px #d0d0d0;
+        border-top: dotted 2px #d0d0d0;
+        background: #deded9;
+        font-size: 160%;
+      }
+      
+      h2::first-letter {
+        color: #781808;
+        background-color: transparent;
+      }
+      
+      #maindiv p {
+        font-size: 100%;
+        font-style: normal;
+        line-height: 150%;
+        padding: 0px;
+        margin: 10px auto;
+        width: 90%;
+        display: block;
+      }
+      
+      #maindiv address a:link,
+      #maindiv address a:visited {
+        font-weight: bold;
+        text-decoration: underline;
+        background-color: transparent;
+        color: #eaeaea !important;
+        padding-right: 5px;
+        padding-left: 6px;
+      }
+      
+      #maindiv address a:focus,
+      #maindiv address a:hover {
+        text-decoration: none;
+        color: #F1F1F1;
+        border: 0;
+      }
+      
+      #maindiv address a:active {
+        color: #fff;
+        text-decoration: line-through;
+        border: none;
+      }
+      
+      #maindiv address {
+        font-size: 95%;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        color: #BBB;
+        background-color: #781808;
+        padding: 3px 0px 0px;
+        margin: 0px;
+        width: 100%;
+        position: absolute;
+        bottom: -1px;
+        left: 0px;
+        display: block;
+        text-align: right;
+      }
+      
+      #maindiv .important {
+        font-size: 95%;
+        font-family: Verdana;
+        text-align: left;
+        background-color: #F1F1F1;
+        border-top: solid 1px #aaa;
+        border-bottom: solid 1px #aaa;
+        border-left: solid 6px #aaa;
+        border-right: solid 6px #aaa;
+        padding: 10px;
+        margin: 20px auto;
+        width: 80%;
+        line-height: 160%;
+      }
+
+      #maindiv .important::before {
+        display: none;
+      }
+      
+      #maindiv .important p {
+        font-size: 100%;
+        text-indent: 0px;
+        margin: 5px 0 10px 0;
+        width: 100% !important;
+      }
+      
+      #maindiv ul {
+        margin: -10px 0 0 30px;
+        *margin-left: 65px;
+      }
+      
+      #maindiv ol {
+        margin: -10px 0 0 35px;
+        *margin-left: 70px;
+      }
+      
+      #maindiv .important ul {
+        margin: -10px 0 0 15px;
+      }
+      
+      #maindiv .important ol {
+        margin: -10px 0 0 20px;
+      }
+      
+      #maindiv ul li {
+        list-style-type: square;
+        line-height: 150%;
+      }
+      
+      #maindiv ol li {
+        line-height: 150%;
+      }
+      
+      .t1 {
+        font-weight: bold;
+        width: 26%;
+        text-align: right;
+        clear: right;
+        float: left;
+        *float: none;
+        *margin-left: 65px;
+        line-height: 22px;
+      }
+      
+      .t2 {
+        text-align: left;
+        width: 73%;
+        float: right;
+        *float: none;
+        line-height: 22px;
+      }
+      
+      hr {
+        margin: 10px 0 10px 0;
+        padding: 0;
+        height: 1px;
+        border: 0;
+        color: #aaa;
+        background-color: #aaa;
+      }
+      
+      hr.floatfix {
+        clear: both;
+        color: #e8e8e6;
+        background-color: #e8e8e6;
+        *margin: 0;
+        *padding: 0;
+      }
+      
+      h1 {
+        font-size: 225%;
+        color: #444;
+        padding: 5px 0 5px 0;
+        margin: 0;
+        width: 100%;
+      }
+      
+      h3,
+      h4,
+      h5 {
+        margin: 10px 40px 10px 40px;
+        padding: 0;
+      }
+      
+      h3 {
+        font-size: 125%;
+        font-style: italic;
+      }
+      
+      h4 {
+        font-size: 125%;
+      }
+      
+      h5 {
+        font-size: 100%;
+      }
+      
+      h6 {
+        width: 100%;
+        margin: 10px 0 15px 0;
+        background-color: #ECECEC;
+        text-align: left;
+        text-indent: 30px;
+        font-size: 100%;
+        font-style: italic;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border-bottom: solid 1px #bbb;
+        border-top: solid 1px #bbb;
+      }
+      
+      a:link,
+      a:visited {
+        color: #781808;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:active {
+        color: #222;
+        border-bottom: 1px solid black;
+      }
+
+    -->
+    /*]]>*/
+    </style>
+    <title>SPELLHOLD STUDIOS - Xulaye NPC</title>
+  </head>
+  <body>
+    <a name="top" id="top"></a>
+    <div id="wrap">
+
+      <div id="header">
+        <h1>Xulaye NPC</h1>
+        <strong>A Spellhold Studios mod for Baldur's Gate II: SoA</strong>
+        <hr />
+        <p class="about">
+          Authors: K'aeloree, Riviera, Bookwyrme, <a href="#credits">Multiple</a>
+        </p>
+        <p class="about">
+
+          <a href="http://www.spellholdstudios.net/ie/xulaye">Mod Website</a> &#8226;
+          <a href="http://www.shsforums.net/index.php?showforum=424">Mod Forum</a> &#8226;
+          Version: 1.2
+        </p>
+        <hr />
+        <p class="menu">
+          <a href="#intro">Introduction</a> &middot;
+          <a href="#installation">Installation</a> &middot;
+          <a href="#credits">Credits</a> &middot;
+          <a href="#version">Version History</a>
+        </p>
+
+      </div>
+      <div id="maindiv">
+
+        <!-- ================== I n t r o d u c t i o n ================== -->
+        <a name="intro" id="intro"></a>
+        <div class="content">
+          <h2>Introduction</h2>
+          <p><i>"Phaere would use you to further her own ends.  Foolish bitch that she is, she believes she can hoodwink me into believing her lies about alliance and strength in numbers.  I alone will rule, and just as she would have me brushed aside, an insignificant bug, so I shall brush *her* aside.</i></p>
+
+                <p><i>She will not be the one to lead our city - and my House - to glory, and neither shall my doddering mother.  I am a leader *worthy* of Ust Natha.</i></p>
+
+                <p><i>You do not know it yet, Veldrin, but there is much happening around you to which you are completely oblivious.  Does this surprise you? It should, considering your pathetically limited mind.</i></p>
+
+                <p><i>Plots, plans, deceptions.  Betrayals.  Soon enough, I think, you will realise the extent to which you are now entrenched."</i></p><br />
+
+                <p><b>Xulaye Despana</b> - sister to the insidious Phaere and daughter of the fearsome Matron Mother Ardulace. Will you help her in her ascent to power? Betray her? Attempt to turn the woman from her dark ways?</p>
+
+                <p>Xulaye joins your party at the beginning of the Ust Natha section of the Underdark. But watch your back; she is Drow to the core, and not unintelligent. Arrogance, ambition, cruelty and ruthlessness dominate her dark heart.</p>
+
+                <p><b>True</b> evil lies in intent - and the wherewithal to carry it out.</p>
+          <address>
+            <span class="footer">Xulaye NPC &gt; Introduction</span> &#8226;<a href="#top">BACK TO TOP</a>
+
+          </address>
+        </div>
+
+        <!-- ================== I n s t a l l a t i o n ================== -->
+        <a name="installation" id="installation"></a>
+        <div class="content">
+          <h2>Installation</h2>
+          <h5>Installing the mod</h5>
+
+          <p>Xulaye is a WeiDU mod, and is very easy to install. Simply un-rar xulaye_v1.rar (<a href="http://www.rarlabs.com">WinRAR</a>) into your Baldur's Gate II directory, run "setup-xulaye.exe" and follow the instructions.</p>
+
+          <h5>Uninstalling the mod</h5>
+
+          <p>To uninstall, simply run "setup-xulaye.exe" again and follow the prompts.</p>
+
+          <h5>Compatibility and Installation Order</h5>
+
+          <p>Xulaye has been tested with many mods and plays with them perfectly well, but if there are troubles in the sandbox just shoot K'aeloree an email or PM. Xulaye should work when installed before or after any other mod, but it is recommended that you install it last. You will not need to start a new game for the changes to appear unless you have already spoken with Handmaiden Imrae near the beginning of Ust Natha, in which case you will need to start a new game.</p>
+
+          <p>You must have the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2Fixpack</a> installed in order to install Xulaye.</p>
+          <address>
+            <span class="footer">Xulaye NPC &gt; Installation</span> <a href="#top">BACK TO TOP</a>
+
+          </address>
+        </div>
+
+
+        <!-- ================== C r e d i t s ================== -->
+        <a name="credits" id="credits"></a>
+        <div class="content">
+          <h2>Credits</h2>
+          <h5>Xulaye NPC mod team:</h5>
+          <span class="t1">Writers:</span> <span class="t2">K'aeloree, Riviera, Bookwyrme, berelinde</span><br />
+          <span class="t1">Coder:</span> <span class="t2">K'aeloree</span><br />
+          <span class="t1">Playtesters:</span> <span class="t2">LavaDV, Yuwakusha, Ankhes</span><br />
+          <span class="t1">With thanks to:</span> <span class="t2">Miss Sakaki, Feuille, SConrad, Tameon the Dragoon</span><br />
+          <hr class="floatfix" />
+          <h5>Programs/tools used in creation:</h5><br />
+          <ul>
+            <li><a href="http://www.weidu.org">WeiDU</a>, by Westley Weimer/Valerio Bigiani (the bigg)</li>
+            <li><a href="http://www.idi.ntnu.no/~joh/ni/">Near Infinity</a>, by Jon Olav Hauglid</li>
+            <li><a href="http://www.rarlab.com/">WinRAR</a>, by Eugene Roshal/Alexander Roshal</li>
+            <li><a href="http://iesdp.gibberlings3.net">IESDP</a>, maintained by igi <em>(though strictly not a tool, still invaluable in any mod creation process)</em></li>
+
+          </ul>
+          <h5>Copyright Notice:</h5>
+          <div class="important">
+            <p>Xulaye NPC was developed by K'aeloree & co, based on material from the game Baldur's Gate II and its expansion.</p>
+            <p>All mod content is &copy; K'aeloree.</p>
+            <p>Baldur's Gate II: Shadows of Amn and Baldur's Gate II: Throne of Bhaal &copy; TSR, Inc. The BioWare Infinity Engine is &copy; BioWare Corp.</p>
+
+            <p>Please note that any and all redistribution and/or hosting of this mod is expressly unwanted without permission from the authors.</p>
+          </div>
+          <address>
+            <span class="footer">Xulaye NPC &gt; Credits</span> &#8226;<a href="#top">BACK TO TOP</a>
+          </address>
+        </div>
+
+        <!-- ================== V e r s i o n   H i s t o r y ================== -->
+        <a name="version" id="version"></a>
+        <div class="content">
+          <h2>Version history</h2>
+          </ul>
+          <h6>3rd February 2013 - Version 1.2:</h6>
+          <ul>
+            <li>Attempt to fix issue where Xulaye's guards would not spawn correctly at end cutscene</li>
+            <li>Fix several other small miscellaneous bugs</li>
+          </ul>
+          <h6>22nd January 2013 - Version 1.1:</h6>
+          <ul>
+            <li>Fixed bug with Demon not properly disappearing in one ending</li>
+            <li>Fixed issue where banters would trigger incorrectly</li>
+            <li>Added combat script courtesy of GeN1e circa 2009</li>
+            <li>TRAified and Russian translation added</li>
+            <li>Barely overcame overwhelming shame at leaving this so long</li>
+          </ul>
+          <h6>28 December 2008 - Version 1.0:</h6>
+          <ul>
+            <li>Initial public release</li>
+          </ul>
+          <address>
+            <span class="footer">Xulaye NPC &gt; Version History</span> &#8226;<a href="#top">BACK TO TOP</a>
+
+          </address>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

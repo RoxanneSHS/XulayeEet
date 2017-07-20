@@ -1,0 +1,27 @@
+IF
+    True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    ActionOverride("Xulaye",LeaveParty())
+    SetGlobal("LK#XulayeJoined","GLOBAL",0)
+    ActionOverride("Xulaye",DestroySelf())
+    ActionOverride(Player1,LeaveAreaLUA("LKXTEM","",[1219.1041],1))
+    ActionOverride(Player2,LeaveAreaLUA("LKXTEM","",[1327.1101],1))
+    ActionOverride(Player3,LeaveAreaLUA("LKXTEM","",[1283.1062],1))
+    ActionOverride(Player4,LeaveAreaLUA("LKXTEM","",[1222.1031],1))
+    ActionOverride(Player5,LeaveAreaLUA("LKXTEM","",[1219.1068],1))
+    ActionOverride(Player6,LeaveAreaLUA("LKXTEM","",[1271.1099],1))
+    ActionOverride(Player1,FaceObject("Xulaye"))
+    ActionOverride(Player2,FaceObject("Xulaye"))
+    ActionOverride(Player3,FaceObject("Xulaye"))
+    ActionOverride(Player4,FaceObject("Xulaye"))
+    ActionOverride(Player5,FaceObject("Xulaye"))
+    ActionOverride(Player6,FaceObject("Xulaye"))
+    MoveViewPoint([1322.1021],INSTANT)
+    FadeFromColor([20.0],0)
+    EndCutSceneMode()
+END

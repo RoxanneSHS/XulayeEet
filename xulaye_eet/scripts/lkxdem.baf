@@ -1,0 +1,110 @@
+IF
+    NumInParty(6)
+    IsOverMe(Player1)
+    IsOverMe(Player2)
+    IsOverMe(Player3)
+    IsOverMe(Player4)
+    IsOverMe(Player5)
+    IsOverMe(Player6)
+    Global("LK#XDemOpen","GLOBAL",1)
+    Global("LK#XDemTravelTrap","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,LeaveAreaLUA("AR2100","",[4996.3322],1))
+    ActionOverride(Player2,LeaveAreaLUA("AR2100","",[4977.3357],2))
+    ActionOverride(Player3,LeaveAreaLUA("AR2100","",[4954.3394],4))
+    ActionOverride(Player4,LeaveAreaLUA("AR2100","",[5052.3342],8))
+    ActionOverride(Player5,LeaveAreaLUA("AR2100","",[5026.3381],2))
+    ActionOverride(Player6,LeaveAreaLUA("AR2100","",[4997.3417],10))
+END
+
+
+IF
+    NumInParty(5)
+    IsOverMe(Player1)
+    IsOverMe(Player2)
+    IsOverMe(Player3)
+    IsOverMe(Player4)
+    IsOverMe(Player5)
+    Global("LK#XDemOpen","GLOBAL",1)
+    Global("LK#XDemTravelTrap","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,LeaveAreaLUA("AR2100","",[4996.3322],1))
+    ActionOverride(Player2,LeaveAreaLUA("AR2100","",[4977.3357],2))
+    ActionOverride(Player3,LeaveAreaLUA("AR2100","",[4954.3394],4))
+    ActionOverride(Player4,LeaveAreaLUA("AR2100","",[5052.3342],8))
+    ActionOverride(Player5,LeaveAreaLUA("AR2100","",[5026.3381],2))
+END
+
+IF
+    NumInParty(4)
+    IsOverMe(Player1)
+    IsOverMe(Player2)
+    IsOverMe(Player3)
+    IsOverMe(Player4)
+    Global("LK#XDemOpen","GLOBAL",1)
+    Global("LK#XDemTravelTrap","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,LeaveAreaLUA("AR2100","",[4996.3322],1))
+    ActionOverride(Player2,LeaveAreaLUA("AR2100","",[4977.3357],2))
+    ActionOverride(Player3,LeaveAreaLUA("AR2100","",[4954.3394],4))
+    ActionOverride(Player4,LeaveAreaLUA("AR2100","",[5052.3342],8))
+END
+
+IF
+    NumInParty(3)
+    IsOverMe(Player1)
+    IsOverMe(Player2)
+    IsOverMe(Player3)
+    Global("LK#XDemOpen","GLOBAL",1)
+    Global("LK#XDemTravelTrap","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,LeaveAreaLUA("AR2100","",[4996.3322],1))
+    ActionOverride(Player2,LeaveAreaLUA("AR2100","",[4977.3357],2))
+    ActionOverride(Player3,LeaveAreaLUA("AR2100","",[4954.3394],4))
+END
+
+IF
+    NumInParty(2)
+    IsOverMe(Player1)
+    IsOverMe(Player2)
+    Global("LK#XDemOpen","GLOBAL",1)
+    Global("LK#XDemTravelTrap","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,LeaveAreaLUA("AR2100","",[4996.3322],1))
+    ActionOverride(Player2,LeaveAreaLUA("AR2100","",[4977.3357],2))
+END
+
+IF
+    NumInParty(1)
+    IsOverMe(Player1)
+    Global("LK#XDemOpen","GLOBAL",1)
+    Global("LK#XDemTravelTrap","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,LeaveAreaLUA("AR2100","",[4996.3322],1))
+END
+
+IF
+    OR(5)
+      InPartyAllowDead(Player2)
+      InPartyAllowDead(Player3)
+      InPartyAllowDead(Player4)
+      InPartyAllowDead(Player5)
+      InPartyAllowDead(Player6)
+    IsOverMe(Player1)
+    Global("LK#XDemOpen","GLOBAL",1)
+    Global("LK#XDemTravelTrap","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ActionOverride(Player1,LeaveAreaLUA("AR2100","",[4996.3322],1))
+    ActionOverride(Player2,LeaveAreaLUA("AR2100","",[4977.3357],2))
+    ActionOverride(Player3,LeaveAreaLUA("AR2100","",[4954.3394],4))
+    ActionOverride(Player4,LeaveAreaLUA("AR2100","",[5052.3342],8))
+    ActionOverride(Player5,LeaveAreaLUA("AR2100","",[5026.3381],2))
+    ActionOverride(Player6,LeaveAreaLUA("AR2100","",[4997.3417],10))
+END

@@ -1,0 +1,10 @@
+IF
+    True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    CreateCreatureObject("lk#xmg1","Xulaye",5,0,0)
+    SmallWait(1)
+    ActionOverride("lk#xmg1",StartDialogueNoSet("Xulaye")
+    EndCutSceneMode()
+END

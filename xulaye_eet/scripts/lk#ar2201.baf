@@ -1,0 +1,84 @@
+// ---------------------------------------
+// Xulaye AR2201 additions
+// ---------------------------------------
+
+// If the party is to go to the pits... to the pits they must go!
+IF
+    Global("LK#XulPits","GLOBAL",1)
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("lk#xcut2")
+END
+
+
+// Once demon has left, and Phaere and Ardulace were already killed by Demon
+IF
+    Global("LK#XulayeWins","GLOBAL",1)
+    Global("LK#XulDemon","AR2201",0)
+    !Dead("UDDEMON")
+THEN
+  RESPONSE #100
+    SetGlobal("LK#XulDemon","AR2201",1)
+    ActionOverride("UDDEMON",ForceSpell("UDDEMON",WIZARD_DIMENSION_DOOR))
+END
+
+IF
+  Global("LK#XulDemon","AR2201",1)
+THEN
+  RESPONSE #100
+    SetGlobal("LK#XulDemon","AR2201",2)
+    ActionOverride("UDDEMON",DestroySelf())
+END
+
+IF
+    OR(2)
+       Global("LK#XulDemon","AR2201",2)
+       Dead("UDDEMON")
+    Global("LK#XulayeWins","GLOBAL",1)
+THEN
+  RESPONSE #100
+        ActionOverride("Xulaye",StartDialogueNoSet(Player1))
+END
+
+
+// If Xulaye + PC wins fight with Demon and Phaere....
+IF
+    !Dead("Xulaye")
+    Dead("Ardulace")
+    Dead("Phaere")
+    !Detect([ENEMY])
+    Global("LK#XulayeWins","GLOBAL",0)
+    GlobalGT("LK#XulayeSecuredCity","GLOBAL",0)
+THEN
+  RESPONSE #100
+    Unlock("Door02")
+    Unlock("Door01")
+    SetGlobal("LK#XulayeWins","GLOBAL",1)
+END
+
+IF
+    Global("LK#XulayeWins","GLOBAL",2)
+THEN
+  RESPONSE #100
+    IncrementGlobal("LK#XulayeWins","GLOBAL",1)
+    ClearAllActions()
+    StartCutSceneMode() 
+    StartCutScene("lk#xcut4")
+END
+
+
+// If Xulaye + PC wins fight with Demon and Ardulace...
+IF
+  InParty("Xulaye")
+  Dead("Ardulace")
+  Dead("UDDEMON")
+  !InMyArea([ENEMY])
+THEN
+  RESPONSE #100
+    Unlock("Door02")
+    Unlock("Door01")
+    SetGlobal("LK#XulayeSecuredCity","GLOBAL",1)
+    SetGlobal("LK#XulayeWins","GLOBAL",1)
+END

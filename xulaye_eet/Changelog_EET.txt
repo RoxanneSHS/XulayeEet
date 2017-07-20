@@ -1,0 +1,11 @@
+V 2.0
+------------------
+- branched off v 1.2.1
+- upgraded to EET
+- areas adapted to PVRZ
+- tra corrections
+- script corrections
+- Weidu version updated
+- portrait upgrade
+- options included into main
+- removed leftovers from package

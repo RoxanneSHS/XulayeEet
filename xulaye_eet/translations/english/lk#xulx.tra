@@ -1,0 +1,50 @@
+@0    = ~Guards, leave us!~
+@1    = ~But Matron, these are surfacers!~
+@2    = ~Yes, and I will deal with them appropriately.  Leave!~
+@3    = ~You may be surfacers of questionable intellect, but you have provided aid--however minimal and unwillingly, and you will be rewarded.~
+@4    = ~How very magnanimous of you, "Matron."~
+@5    = ~Our reward will be getting out of this damned place.  You've got what you want; can't you just let us leave?~
+@6    = ~A reward will not be necessary.~
+@7    = ~What kind of reward are we talking?~
+@8    = ~Thank you, Xulaye.  We appreciate it.~
+@9    = ~Then your lives will be your reward--that is something I doubt you want to carelessly throw away?~
+@10   = ~I suggest you be silent, <PRO_MALEFEMALE>, lest I change my mind about letting you live.~
+@11   = ~You will be given a cloak similar to Solaufein's which has been enchanted specifically for surface use, as well as ten thousand gold coins as reward for your help--such as it was.~
+@12   = ~That's very generous, indeed.  Thank you.~
+@13   = ~Is that all?  A measly cloak, and some money?~
+@14   = ~Keep your cloak and money.  I don't need them.~
+@15   = ~Remove yourselves from this temple and leave Ust Natha immediately, <PRO_MALEFEMALE>.  If I see your face in this city again, I will not be so generous.~
+@16   = ~Understood.  Goodbye, Matron Xulaye.~
+@17   = ~I will do what I damn well please.~
+@18   = ~When your actions catch up with you, Xulaye, I hope the driders prolong your agony as long as possible.~
+@19   = ~Farewell, surfacer.  Now leave before I decide otherwise!~
+@20   = ~Familial Intrigue
+
+With our victory, Xulaye has now become Matron of House Despana and ruler of Ust Natha.  We have her "gratitude", such as it is, though how long that will last I am not sure.  She has commanded us to leave Ust Natha as soon as possible.~
+@21   = ~Hardly.  I tire of these games--you will leave now, before I decide otherwise!~ ~Farewell, surfacer, and good riddance.  I have much to do.~
+@22   = ~Farewell, surfacer, and good riddance.  I have much to do.~
+@23   = ~Likewise.~
+@24   = ~Veldrin.~
+@25   = ~Handmaiden Imrae, I vow on my life that this--this *creature* is a surfacer in disguise.  <PRO_HESHE> has betrayed us all, and I cannot let their lies continue!~
+@26   = ~That is a serious accusation.  Veldrin, what say you?~
+@27   = ~I am a drow, and I'll fight anyone who says otherwise!~
+@28   = ~I deny these foul accusations!~
+@29   = ~Yes, I am a surfacer--but Xulaye has known for some time.  She is as much a traitor as I am.~
+@30   = ~If that is your choice, "Veldrin."  Warriors, prepare yourselves!~
+@31   = ~Xulaye's Revenge
+  
+It seems Xulaye has informed the Matron of my surfacer heritage, and to "prove" myself to be drow I have challenged her to a battle.  She will be dead on the floor before long.~
+@32   = ~Pfah!  Of course you would deny me, you pathetic waste of air!~
+@33   = ~You admit this?!~
+@34   = ~I can hardly believe the nerve of you, surfacer!  How dare you accuse me of being traitor to my own people?!~
+@35   = ~You will die for this!  All of you!~
+@36   = ~Xulaye's Revenge
+
+It seems Xulaye has informed the Matron of my surfacer heritage, and thanks to her, I have to fight my way through the Underdark.  Not a woman I'd particularly like as an ex, for sure.~
+@37   = ~An accusation as serious as this is usually decided by one-on-one combat; in this case, as requested by Xulaye, you may if you so choose fight with companions at your side.~
+@38   = ~You will pay for your betrayal, surfacer!  I will ensure it!~
+@39   = ~Xulaye's Revenge
+
+It seems Xulaye has informed the Matron of my surfacer heritage, and in order to prove my "innocence," we are required to battle, with the winner being believed.~
+@40   = ~Hardly surprising.  Where she acquired those pathetic dregs of a force I do not know.~
+@41   = ~You are free to go, Veldrin.  But I am watching you.~

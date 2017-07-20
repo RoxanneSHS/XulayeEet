@@ -1,0 +1,12 @@
+// ---------------------------------------
+// Extending AR2202 (Tarkiz & Bennera Encounter)
+// ---------------------------------------
+
+IF 
+    Global("LK#BenerraTarkizExist","AR2202",0)
+THEN
+  RESPONSE #100
+    SetGlobal("LK#BenerraTarkizExist","AR2202",1)
+    CreateCreature("lk#xben",[1410.933],3)
+    CreateCreature("lk#xtar",[1423.1065],7)
+END

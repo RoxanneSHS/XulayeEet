@@ -1,0 +1,263 @@
+@0    = ~Greetings, Mistress Xulaye of House Despana.  I am Ikaxan, an envoy of House Kii'Rret, whose leaders have agreed to meet with you outside the confines of this city concerning your rather unusual request.~
+@1    = ~We will aid you, but the price is steep.~
+@2    = ~Exactly how steep, male?~
+@3    = ~I would not presume to overstep my bounds--allow me to take you to my Mistress.~
+@4    = ~Veldrin, we must leave immediately.  We would not wish to keep the kind Matron of House Kii'Rret waiting, would we?~ [lk#xul58]
+@5    = ~No, great Mistress.  Let us proceed to the appointed spot.  Lead on, Envoy Ikaxan of House Kii'Rret.~
+@6    = ~We have far too much to do than follow you around the Underdark as willing packmice, Xulaye.  You're on your own.~
+@7    = ~Of course not.  Whenever you're ready, Xulaye.~
+@8    = ~If we must.  (sigh)~
+@9    = ~Take us to your Matron immediately, male.  We have much to discuss, her and I.~
+@10   = ~Come, Veldrin.  We must leave.~ [lk#xul59]
+@11   = ~Familial Intrigue
+
+We have been approached by a drow man by the name of Ikaxan, claiming to be an envoy of the Matron of House Kii'Rret.  It seems Xulaye is planning something, since she is obviously very concerned about this meeting.  I have agreed to accompany her to see the Matron--we will see what comes of it.~
+@12   = ~I would have a word with you aside, Veldrin.~
+@13   = ~You do not understand the situation--we *must* have the support of House Kii'Rret, or all my carefully wrought plans will fall apart.~
+@14   = ~Still, I refuse to follow you around like a duckling.  I have far more important things than help you climb the ladder of power.~
+@15   = ~Fine.  Let's go, then.~
+@16   = ~If I absolutely must, then I will.  But I'm not going to enjoy it.~
+@17   = ~Then I shall take my leave of you, and may Lolth take your vile heart!~
+@18   = ~Take me to your Mistress, Envoy Ikaxan.  Let us leave these pathetic swine to their fates.~
+@19   = ~Familial Intrigue
+
+One of the drow has been ordered to join us; a sister of Phaere Despana, the woman we have been charged with saving.  We will have to be even more careful not to betray ourselves, because if we do, it would be one hell of a fight.~
+@20   = ~Familial Intrigue
+    
+It seems Xulaye has seen through our ruse, and although she does not seem to be interested in telling the rest of the drow, she has threatened to do so if we do not obey her commands.~
+@21   = ~Familial Intrigue
+
+After refusing to accompany Xulaye to a meeting between another Matron and herself, she has left the group.  I had best step carefully, since she is most probably planning revenge of some sort.~
+@22   = ~You don't have to, Veldrin.~
+@23   = ~My apologies, Envoy Ikaxan.  Take us to your mistress.  We have much to discuss, her and I.~
+@24   = ~As you wish.~
+@25   = ~Mistress Larace, let me introduce Xulaye, Daughter of House Despana.~
+@26   = ~Matron Larace, how lovely to see you once more.~ [lk#xul60]
+@27   = ~But who would have expected in these circumstances?  (laugh) Certainly not I.~
+@28   = ~But I'm sure you have been planning this for months, Xulaye.  I would not expect any less.~
+@29   = ~Indeed not.  Your envoy--Ikaxan--mentioned a price?~
+@30   = ~As much as I would simply love to help you, Xulaye, my resources are stretched thin enough as it is.  I require some material payment in order to fulfil your request.~
+@31   = ~What do you want?  My servant, Veldrin, shall take care of it.  Speak to <PRO_HIMHER>.~
+@32   = ~As you wish.~
+@33   = ~I require 20,000 gold.~
+@34   = ~(cough) Mistress Xulaye, may I speak to you privately for a moment?~
+@35   = ~I will pay the sum required.  I expect compensation for this, Mistress Xulaye.~
+@36   = ~I'm afraid I simply do not have that amount.  Is there any other way to acquire your services?~
+@37   = ~What?!  20,000 gold?!  We may as well go and murder Matron Ardulace ourselves for that sum!~
+@38   = ~Are you sure there isn't any other way?  Surely there's something else you need?~
+@39   = ~My apologies, Matron Larace.  I will have <PRO_HIMHER> punished at the next convenient opportunity.  Excuse us for a moment.~
+@40   = ~Make it quick, Veldrin.  I cannot keep the Matron waiting.~ [lk#xul61]
+@41   = ~I refuse to pay that sum!  It's exorbitant!~
+@42   = ~I can pay it, but are you sure there's no other way to gain the services of House Kii'Rret?~
+@43   = ~I don't have that kind of money sitting around, Xulaye.~
+@44   = ~I want to be sure this is a fair deal.  What are your thoughts?~
+@45   = ~The necessary preparations will be made.  A pleasure doing business with you, Xulaye, Daughter of House Despana.~
+@46   = ~As always, Matron Larace.~
+@47   = ~Familial Intrigue
+     
+After a short conversation with Mistress Larace of House Kii'Rret, we have paid her twenty thousand coins in exchange for her aid.  I am not entirely sure what kind of aid it is, but I suspect it to be military in nature.  Time will tell, I suppose.~
+@48   = ~My, my, Xulaye.  This is a new discovery--insolence in your own slaves?~
+@49   = ~My apologies, I will have <PRO_HIMHER> flogged when we return to the city.~
+@50   = ~Insolent as it was, my servant's question still stands.  Is there any other way?~
+@51   = ~Hmm.  Now that I think about it, I believe there is something I need.~
+@52   = ~There is a certain piece of armor that I have been eager to acquire for some time now, but due to certain political constraints, have been unable to.  If you could...retrieve the armor for me, I would be willing to aid your Mistress.~
+@53   = ~I would like a bit more information before agreeing to such a deal, Matron.  Where would I find this suit of armor?~
+@54   = ~I'm listening.~
+@55   = ~Feel free.  But if you wish our aid, you must pay.~
+@56   = ~There is another way, if you are willing.~
+@57   = ~I will pay the required amount.~
+@58   = ~Anything.~
+@59   = ~If it does not require paying 20,000 gold, then I'm at least willing to hear you out.~
+@60   = ~No deal.  I'm not interested.~
+@61   = ~Excuse us for a moment, Matron.~
+@62   = ~If you do not help me now, Veldrin, I will do my utmost to turn the entirety of Ust Natha against you.~
+@63   = ~What say you?~
+@64   = ~I think I'll risk it.~
+@65   = ~Fine!  I'll pay if I must.  But I'm not happy about this, Xulaye.~
+@66   = ~I don't have that kind of money.~
+@67   = ~Matron Larace, is there no other way?~
+@68   = ~I could not help but overhear--there is another way, if you are interested.~
+@69   = ~It is a fair deal.  She is risking her own status to help us, and we must pay her accordingly.~
+@70   = ~Then I shall pay.~
+@71   = ~But I don't have that much money!  Is there any other way to acquire your services, Matron Larace?~
+@72   = ~Surely there's something else you need, Matron?~
+@73   = ~I'm not interested.  Deal's off, Xulaye.~
+@74   = ~It is in the possession of a group of Duergar, in the southwest.~
+@75   = ~I will go immediately.~
+@76   = ~I'm not sure.  Mistress Xulaye?  What are your thoughts?~
+@77   = ~No deal.  I'm far too busy to go around collecting assorted things.~
+@78   = ~I think I would rather pay the 20,000 gold.~
+@79   = ~Fine--may Lolth's chosen sink their fangs into you soon, idiot.~
+@80   = ~Matron, there has been a change of plans.  Perhaps we should go elsewhere to discuss our arrangement?~
+@81   = ~Of course.~
+@82   = ~Familial Intrigue
+     
+After refusing to aid Xulaye in securing the aid of House Kii'Rret, she has left the group.  I had best step carefully, since she is most probably planning revenge of some sort.~
+@83   = ~Yes, yes.~
+@84   = ~Here are the funds, Matron Larace.~
+@85   = ~Good.  Perhaps this servant of yours isn't so worthless after all, Xulaye.  <PRO_HESHE> certainly seems to know what <PRO_HESHE> is doing.~
+@86   = ~Indeed.~
+@87   = ~You will find my servant, Ikaxan, in the Male Fighter's Guild.  Give the armor to him, and you will have my services.~
+@88   = ~As you wish, Matron Larace.  You will have the armor as soon as we retrieve it.~
+@89   = ~Good.  See to it that it does not take too long, Xulaye, or I will grow...discontent.~
+@90   = ~With all speed, Matron.  My thanks.~ [lk#xul63]
+@91   = ~Familial Intrigue
+     
+I have agreed to retrieve a set of armor for Matron Larace in exchange for the aid of House Kii'Rret.  It is in the possession of some duergar to the southwest.  When we have it, she has told us to give it to her envoy, Ikaxan, who will be waiting in the Male Fighter's Guild in Ust Natha.~
+@92   = ~It is a good deal.  Take it, and we will find this--armor and be done with it.~
+@93   = ~As you wish.  Matron Larace?  We would be happy to find this armor for you.~
+@94   = ~I think I'd rather pay the money.  But I'm not happy about this, Xulaye.~
+@95   = ~No, I refuse.~
+@96   = ~Then I'll pay the money.  But I'm not happy about this, Xulaye.~
+@97   = ~If I must get this armor for you, Matron, I shall.~
+@98   = ~Greetings, servant of Mistress Xulaye.  Do you have the item my Matron has requested?~
+@99   = ~Indeed I do.  Here you are, Envoy Ikaxan.~
+@100  = ~No, I do not.  I wanted to enquire about the location of the Duergar?  I can't quite recall where Matron Larace said they were.~
+@101  = ~I've thought about it, and I think I would prefer to pay the 20,000 gold.~
+@102  = ~My apologies, I was simply passing through.~
+@103  = ~I've decided not to help you.  Get your own armor.~
+@104  = ~I will inform my Matron, and the necessary preparations will be put into place.~
+@105  = ~See to it that they are, Envoy Ikaxan.  We worked hard to acquire this armor, and I expect considerable aid in return.~
+@106  = ~And you shall have it.  I shall take my leave and take the armor in question to my Matron.  I'm sure she will be very pleased.~
+@107  = ~Familial Intrigue
+     
+I have given the Mithril Chain to Ikaxan, who has assured Xulaye that House Kii'Rret will make the necessary preparations.  It seems Xulaye's plans--whatever they are, exactly--are coming to fruition.~
+@108  = ~To the southwest--south of the city.  Do not tarry overlong, or Matron Larace will presently grow irritated--and I can assure you, that is most definitely not something any sane Drow would want.~
+@109  = ~We will return with it soon, worry not.~
+@110  = ~I but hope so.~
+@111  = ~Of course.  I shall see you soon, I assume?~
+@112  = ~Soon enough, Envoy Ikaxan.~
+@113  = ~Do not tarry overlong, or Matron Larace will presently grow irritated--and I can assure you, that is most definitely not something any sane Drow would want.~
+@114  = ~Excuse us, Envoy Ikaxan.~
+@115  = ~What are you thinking?!  We *must* get the aid of House Kii'Rret, or my plans will fail!~
+@116  = ~That's not my problem, Xulaye.  If you're so desperate to get their help, get the damned armor yourself.~
+@117  = ~Fine, I'll help.  But I expect payment for this, Xulaye.~
+@118  = ~Envoy Ikaxan, there has been a change of plans.  Perhaps we should go elsewhere to discuss our arrangement?~
+@119  = ~As you wish, Mistress Xulaye.~
+@120  = ~Well?~
+@121  = ~We will get you the armor, Envoy Ikaxan.  Could you please remind us where it is again, in case *some* here have forgotten?~
+@122  = ~I am looking for a certain suit of armor I believe you have in your possession.~
+@123  = ~Could you remind me where those items you wanted were, dwarf?~
+@124  = ~I have the eye of an Elder Orb, Carlig.~
+@125  = ~I have the blood of a Kua-Toan prince, Carlig.~
+@126  = ~I have the blood of an Elder Brain, Carlig.~
+
+@128  = ~I don't have the time to listen to your stories, but tell me; would you know anything about a rather special suit of armor?~
+@129  = ~I am looking for a certain suit of armor I believe you have in your group's possession.  You wouldn't know anything about that, would you?~
+@130  = ~A certain suit of...?~
+@131  = ~Ah, I am afraid that w-would not be possible.~
+@132  = ~What?!  I demand an explanation at once, wretch!~
+@133  = ~Why not?~
+@134  = ~Is there any way that you could *make* it possible?~
+@135  = ~If I do not have the armor within five moments, fool, your innards will be spilled before you count six.~
+@136  = ~W-well, it is a family relic, and is worth an enormous sum of money, you see, Malla Drow...~
+@137  = ~I don't care how much it's worth, I must have it!~
+@138  = ~A family relic, you say?  Tell me about it.~
+@139  = ~Hmph.  So there is nothing I can do to persuade you to hand it over?~
+@140  = ~If you won't give it to me, I shall have to kill you for it.~
+@141  = ~My apologies, then.  It matters not.  I was merely curious.~
+@142  = ~There is no need for v-violence, Malla Drow, my apologies, but it is a family relic, and is worth an enormous sum of money, you see...~
+@143  = ~I would n-not even consider parting with it for anything under...20,000 gold.  At least.~
+@144  = ~That's an outrageous sum of money!  You can't possibly expect me to pay that amount for a mere suit of armor.~
+@145  = ~For the gods' sake...not another ridiculous sum!  What do you need me to do in order to lower it?  I assume there's something--there's always *something*.~
+@146  = ~It doesn't matter, then.  I'll leave you be.~
+@147  = ~Fine, I will pay the required sum.~
+@148  = ~Is there no way I could persuade you to lower the price?~
+@149  = ~It was forged by my ancestor, the great Orkan.  It possesses g-great magical abilities, and I went to e-enormous trouble to acquire it.  My apologies, Malla Drow, but...I cannot part with it for any less than 20,000 gold.~
+@150  = ~I have the money you require.~
+@151  = ~Great magical abilities?  What kind of magical abilities are we talking, here?~
+@152  = ~If you won't give it to me, I'll simply have to take it.~
+@153  = ~T-there is no need for violence, Malla Drow, please!~
+@154  = ~Well, is there any way to lower the cost?~
+@155  = ~If you don't give me the armor, I'll have little choice, lowly one.~
+@156  = ~Oh, there'll be no violence...as long as you hand me the armor.  I assure you.~
+@157  = ~It has been in my family for generations, revered one, I cannot simply give it away without some recompense!~
+@158  = ~Is there anything I can do to lower the price?  I refuse to pay such an exorbitant sum for a pathetic suit of armor.~
+@159  = ~If you don't give me the armor, I will wring your neck, fool.~
+@160  = ~I have the money you require, now hand me the armor or suffer the consequences!~
+@161  = ~There are a...a few items of worth...each of which if you included in the deal would lower the price significantly...But they are difficult to acquire, at best.  I am sorry, but I cannot simply give away family heirlooms...even to a mighty Drow such as yourself.~
+@162  = ~What are these items, and where can I find them?~
+@163  = ~How much will they lower the price, exactly?~
+@164  = ~Tell me more.~
+@165  = ~While danger is of no consequence, I have little time to retrieve items for some petty dwarf.~
+@166  = ~Thank you--here is the armor.  Take...take care of it.~
+@167  = ~Familial Intrigue
+    
+I have secured the armor from the duergar, and now need to hand it to Ikaxan in the Male Fighter's Guild building in Ust Natha.  It is a very finely wrought piece of armor--it's no wonder the Matronw ould want it in her posession.~
+@168  = ~F-for you, great Malla C'rintri, I shall go as low as 15,000 gold...I am sorry, but I cannot simply give away family heirlooms...even to a mighty Drow such as yourself.~
+@169  = ~Thank you, Carlig.  Here is the gold you require.~
+@170  = ~That is still to much for me.  Is there anything I can do for you in order to lower the cost?~
+@171  = ~Before I agree to anything, I demand to know more about it.~
+@172  = ~That's just too bad, isn't it?  You will give me the armor, or I will forcibly take it from you.~
+@173  = ~I am afraid I cannot.  However...~
+@174  = ~Now, if you would not mind...my apologies, great Malla Drow, but your presence does not exactly encourage business...~
+@175  = ~Of course.  Thank you, Carlig.~
+@176  = ~I would like to see your wares, first.~
+@177  = ~You offend me, dwarf.  See to it that it does not happen again, or I will see to it that you will never offend anyone again.~
+@178  = ~I...I am not entirely sure.  I am sorry.~
+@179  = ~No matter.  Is there any way to lower the price of this accursed armor?~
+@180  = ~Then I am not interested.~
+@181  = ~Fine.  Here are the funds, now hand me the armor.  I have an extremely busy schedule, so be quick about it, fool.~
+@182  = ~If you don't give me the armor, dwarf, you'll find life no longer worth living.~
+@183  = ~(gulp) Y-you'll have to fight me for it!  Or...or I could lower the cost?~
+@184  = ~No, I shall not.  You will give me the armor, or you and your companions here will die.~
+@185  = ~Bah, this is not worth the effort.  Goodbye.~
+@186  = ~If you will not give it to me, then I demand you lower the price!~
+@187  = ~Bah!  Fine.  Here are the funds, now hand me the armor.  And be quick about it, fool.~
+@188  = ~Fine.  Here are the funds, now hand me the armor.  And be quick about it, fool.~
+@189  = ~The...(gulp) The eye of an Elder Orb Beholder, blood from the Elder Brain of the Mind Flayers...or...or the blood of a Kua-Toan prince.  Each of these items is worth a significant sum.  With one of these, the armor would only be...5,000 gold?~
+@190  = ~No!  I refuse, fool.  Begone.~
+@191  = ~As you wish.  I will be back with one of the things you have requested soon.~
+@192  = ~I would prefer to pay.  Here--20,000 gold, like you requested.  Hmph.~
+@193  = ~I would prefer to pay.  Here--15,000 gold, like you requested.  Hmph.~
+@194  = ~Where could I find these things?~
+@195  = ~W-with one of the items, the armor would only be...5,000 gold.~
+@196  = ~They are the...(gulp) The eye of an Elder Orb Beholder, blood from the Elder Brain of the Mind Flayers...or...or the blood of a Kua-Toan prince.  Each of these items is--worth a significant sum, and would, as I said, pay for the majority of it.~
+@197  = ~A-a pleasure, revered one.~
+@198  = ~(gulp) As you wish, great one.~
+@199  = ~Then so be it!  P-prepare to die!~
+@200  = ~I will await your return, Malla Drow.  Good tidings.~
+@201  = ~Familial Intrigue
+    
+I have agreed to get Carlig one of three things in return for the armor Matron Larace requires.  Unfortunately, it doesn't seem that any of these things will be particularly easy to find; the eye of an Elder Orb, blood from a Mind Flayer Elder Brain or the blood of a Kua-Toan prince.  He believes there is an Elder Orb in the eastern tunnels, and a Kua-Toan city to the west, but he is not sure where I would be able to find an Elder Brain.~
+@202  = ~Ah...I would need the eye of an Elder Orb, blood from the Elder Brain of the Mind Flayers...or...or the blood of a Kua-Toan prince.  These are all worth much, and will lower the cost to 5,000 gold.~
+@203  = ~I will be back with one of the things you have requested soon, then.~
+@204  = ~If you don't *give* me the armor, dwarf, you'll find life no longer worth living.~
+@205  = ~I--I believe there is an Elder Orb in the tunnels to the south east of here...and from what I have heard, there is an ancient Kua-Toa city in the western caverns, though I have never travelled there myself.  The Eye of an Elder Orb...or b-blood from a Kua-Toan prince--or an Elder Brain--will lower the cost significantly, as I might have said.~
+@206  = ~I am not sure where you would find an Elder Illithid brain, though...but I have heard rumours of sightings near here.~
+@207  = ~I will return with one of these items post-haste, dwarf.~
+@208  = ~Bah, if I must.~
+@209  = ~I--I believe there is an Elder Orb in the tunnels to the south east of here...and from what I have heard, there is an ancient Kua-Toa city in the western caverns, though I have never travelled there myself.~
+@210  = ~I am not sure where you would find an Illithid brain, but I have heard rumours of Illithid sightings near here.~
+@211  = ~I am not interested.~
+@212  = ~To the south east there is a colony of Beholders, and from what I have heard there is an ancient Kua-Toan city in the western caverns.  I am not sure where you would find an Elder Brain, but I have heard rumours of sightings near here.~
+@213  = ~I hope that helps you.  I will await your return, Malla Drow.  Good tidings.~
+@214  = ~What do you think you're doing, Veldrin?  We need that armor, and you know it.~
+@215  = ~Correction: *you* need that armor.  Get it yourself, Xulaye, I don't have that kind of money.~
+@216  = ~Fine, but I expect you to repay me for this.~
+@217  = ~Yes, I suppose we do.  (sigh) Very well, what were you saying about a quest, dwarf?~
+@218  = ~Of course, Mistress.  We shall be back with one of the items soon, Carlig.~
+@219  = ~Bah!  Then you are of no use to me, Veldrin--I swear upon my life, I will make sure you do not leave this place alive!~
+
+@221  = ~Familial Intrigue
+
+After refusing to aid Xulaye in acquiring the armor Matron Larace has requested, she has left the group.  I had best stay cautious; knowing Xulaye, she is already planning some kind of revenge.~
+@222  = ~We will do whatever it requires to get this armor, dwarf.~
+@223  = ~Here is the money, dwarf.  Hand me the armor immediately!~
+@224  = ~You will not be needing the 5,000 gold as well, will you, dwarf?~
+@225  = ~M-Mistress Despana?  I-I did not see you!~
+@226  = ~O-of course not...of course not.  Here.~
+@227  = ~Hmph.~
+@228  = ~If you do not have the time to listen to my tale, I do not have the time to tell you about *armor*.  I am no merchant--talk to Carlig if that's what you want.~
+@229  = ~Speak with Carlig if that's what you're interested in--but it is a family heirloom.  Do not expect to get it without significant repercussions on your amount of gold--or your health.~
+@230  = ~We must get that armor immediately, surfacer!~ [lk#xul63]
+@231  = ~We're on our way now, Xulaye.~
+@232  = ~We will when I decide we will.~
+@233  = ~No, "we" are not.  Feel free to get it yourself.~
+@234  = ~Good.  We must not tarry--Matron Larace is not known for her patience, and neither am I.~
+@235  = ~No, we will do it immediately!  Matron Larace is not know for her patience, and neither am I.  You do not want to earn my ire.~
+@236  = ~You will pay for this, idiotic <PRO_MALEFEMALE>!  I will ensure you do not leave the Underdark alive!~
+@237  = ~Familial Intrigue
+    
+Apparently Xulaye feels I have taken too long in retrieving the armor Matron Larace requested, and has taken it upon herself to do so.  She has left the group, and threatened that she will ensure we do not leave the Underdark alive.  Whether this is an empty threat or not, I'm not sure.~
+@238  = ~What moronic breed of creature are you?!  You obviously have no intention of retrieving the armor!~ [lk#xul64]

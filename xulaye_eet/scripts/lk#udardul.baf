@@ -1,0 +1,15 @@
+IF
+  OR(3)
+    Allegiance(Myself,ENEMY)
+    Heard([ANYONE],HELP_ME_GROUP151)
+    AttackedBy([ANYONE],DEFAULT)
+  InParty("Xulaye")
+  GlobalGT("udDrowPlot","GLOBAL",29)
+  GlobalLT("udDrowPlot","GLOBAL",32)
+  Global("doneRitual","AR2201",0)
+  See([PC])
+THEN
+  RESPONSE #100
+    SetGlobal("udDrowPlot","GLOBAL",32)
+    StartDialogueNoSet(LastSeenBy(Myself))
+END

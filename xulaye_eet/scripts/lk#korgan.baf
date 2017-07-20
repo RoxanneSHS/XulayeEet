@@ -1,0 +1,46 @@
+// ---------------------------------------
+// Extending Korgan's Script
+// ---------------------------------------
+
+IF
+    Global("LK#KorganPits","LOCALS",0)
+    Global("LK#KorganPitsCheck","LOCALS",0)
+    OR(11)
+      AreaCheck("AR2200")
+      AreaCheck("AR2201") 
+      AreaCheck("AR2202") 
+      AreaCheck("AR2203") 
+      AreaCheck("AR2204")
+      AreaCheck("AR2205") 
+      AreaCheck("AR2206")
+      AreaCheck("AR2207") 
+      AreaCheck("AR2208") 
+      AreaCheck("AR2209") 
+      AreaCheck("AR2210")
+THEN
+  RESPONSE #100
+    SetGlobalTimer("LK#KorganPitsTimer","GLOBAL",100)
+    SetGlobal("LK#KorganPitsCheck","LOCALS",1)
+END
+
+IF
+    GlobalTimerExpired("LK#KorganPitsTimer","GLOBAL")
+    Global("LK#KorganPitsCheck","LOCALS",1)
+    Global("LK#KorganPits","GLOBAL",0)
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+    SetGlobal("LK#KorganPits","GLOBAL",1)
+    StartDialogue("KORGANJ","Player1")
+END
+
+IF
+    InParty(Myself)
+    GlobalTimerExpired("LK#KorganPitsTimer","GLOBAL")
+    Global("LK#KorganPitsCheck","LOCALS",1)
+    Global("LK#KorganPits","GLOBAL",1)
+THEN
+  RESPONSE #100
+    MoveToObject(Player1)
+    StartDialogue("KORGANJ","Player1")
+END

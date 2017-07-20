@@ -1,0 +1,13 @@
+// -------------------------------------
+// Approach Xulaye and speak to her
+// -------------------------------------
+IF
+    InParty("Xulaye")
+    Range([PC],15)
+    Global("LK#XulBenEncounter","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("LK#XulBenEncounter","GLOBAL",1)
+    MoveToObjectNoInterrupt("Xulaye")
+    StartDialogueNoSet("Xulaye")
+END

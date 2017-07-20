@@ -1,0 +1,11 @@
+IF
+    OR(2) 
+      Allegiance("Phaere",ENEMY)
+      Allegiance("Ardulace",ENEMY)
+    OR(2)
+      !Dead("Phaere")
+      !Dead("Ardulace")
+THEN
+  RESPONSE #100
+    Attack([ENEMY])
+END

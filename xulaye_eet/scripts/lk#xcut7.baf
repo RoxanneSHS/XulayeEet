@@ -1,0 +1,21 @@
+IF
+    True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ActionOverride(Player1,MoveToPoint([3.125]))
+    ActionOverride(Player2,MoveToPoint([3.125]))
+    ActionOverride(Player3,MoveToPoint([3.125]))
+    ActionOverride(Player4,MoveToPoint([3.125]))
+    ActionOverride(Player5,MoveToPoint([3.125]))
+    ActionOverride(Player6,MoveToPoint([3.125]))
+    FadeToColor([20.0],0)
+    ActionOverride(Player1,LeaveAreaLUA("AR2100","",[4996.3322],1))
+    ActionOverride(Player2,LeaveAreaLUA("AR2100","",[4977.3357],2))
+    ActionOverride(Player3,LeaveAreaLUA("AR2100","",[4954.3394],4))
+    ActionOverride(Player4,LeaveAreaLUA("AR2100","",[5052.3342],8))
+    ActionOverride(Player5,LeaveAreaLUA("AR2100","",[5026.3381],2))
+    ActionOverride(Player6,LeaveAreaLUA("AR2100","",[4997.3417],10))
+    FadeFromColor([20.0],0)
+    EndCutSceneMode()
+END

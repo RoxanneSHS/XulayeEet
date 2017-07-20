@@ -1,0 +1,20 @@
+IF
+    True()
+THEN
+  RESPONSE #100       
+    CutSceneId(Player1)
+    FadeToColor([20.0],0)
+    IncrementGlobal("LK#XulPits","GLOBAL",1)
+    SetGlobal("LK#XulEraseJournal","GLOBAL",1)
+    Wait(1)
+    ActionOverride(Player1,LeaveAreaLUA("LKXDEM","",[730.1575],1))
+    ActionOverride(Player2,LeaveAreaLUA("LKXDEM","",[785.1605],1))
+    ActionOverride(Player3,LeaveAreaLUA("LKXDEM","",[850.1640],1))
+    ActionOverride(Player4,LeaveAreaLUA("LKXDEM","",[700.1630],1))
+    ActionOverride(Player5,LeaveAreaLUA("LKXDEM","",[760.1660],1))
+    ActionOverride(Player6,LeaveAreaLUA("LKXDEM","",[820.1680],1))
+    MoveViewPoint([770.1650],INSTANT)
+    FadeFromColor([20.0],0)
+    ActionOverride("Xulaye",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END

@@ -1,0 +1,23 @@
+IF
+    True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Explore()
+    Unlock("Door02")
+    Unlock("Door01")
+    CreateCreature("lk#xgk3",[966.1235],3)
+    CreateCreature("lk#xgk4",[1150.1320],8)
+    CreateCreature("lk#xgk3",[1050.920],11)
+    CreateCreature("lk#xgk4",[1250.870],1)
+    CreateCreature("lk#xgk1",[1029.608],5)
+    CreateCreature("lk#xgk2",[1031.610],1)
+    Wait(1)
+    ActionOverride("lk#xgk1",MoveToPoint([700.300])
+    ActionOverride("lk#xgk2",MoveToPoint([1136.285])
+    MoveViewPoint([820.473],INSTANT)
+    Wait(3)
+    IncrementGlobal("LK#XulSecuredCity","GLOBAL",1)
+    EndCutSceneMode()
+    ActionOverride("Phaere",StartDialogueNoSet("Xulaye"))
+END
