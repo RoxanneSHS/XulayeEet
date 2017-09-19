@@ -9,3 +9,4 @@ V 2.0
 - portrait upgrade
 - options included into main
 - removed leftovers from package
+- LoB flags added
