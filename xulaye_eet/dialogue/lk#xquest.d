@@ -173,7 +173,7 @@ APPEND LK#XLAR
     ++ @75 + LK#XQKiiRret_411
     ++ @76 EXTERN LK#XULJ LK#XQKiiRret_412
     ++ @77 EXTERN LK#XULJ LK#XQKiiRret_413
-    + ~PartyGoldGT(19999)~ + @78 DO ~TakePartyGold(20000)~ + LK#XQKiiRret_11
+    + ~PartyGoldGT(19999)~ + @78 DO ~TakePartyGold(20000)~ EXTERN LK#XULJ LK#XQKiiRret_62
   END
 END
 
