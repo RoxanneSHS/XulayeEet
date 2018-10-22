@@ -1,3 +1,9 @@
+V 2.1
+___________________________
+- dialogue loop fixed
+- portrait upgrade
+
+
 V 2.0
 ------------------
 - branched off v 1.2.1
@@ -6,7 +12,6 @@ V 2.0
 - tra corrections
 - script corrections
 - Weidu version updated
-- portrait upgrade
 - options included into main
 - removed leftovers from package
 - LoB flags added
