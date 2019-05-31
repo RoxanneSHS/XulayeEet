@@ -412,7 +412,7 @@ APPEND UDDUER01
   
   IF ~~ LK#XAQ_113
     SAY @166
-    IF ~~ UNSOLVED_JOURNAL @167 DO ~GiveItemCreate("lk#xarm",Player1,0,0,0)~ + LK#XAQ_116
+    IF ~~ UNSOLVED_JOURNAL @167 + LK#XAQ_116
   END
   
   IF ~~ LK#XAQ_114
