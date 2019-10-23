@@ -237,7 +237,7 @@ END
 
 // Quest reminder
 IF  
-    RealGlobalTimerExpired("LK#XulQuest1Timer","GLOBAL")
+    GlobalTimerExpired("LK#XulQuest1Timer","GLOBAL")
     InParty(Myself)
     See(Player1)
     !StateCheck("Xulaye",CD_STATE_NOTVALID)
@@ -269,7 +269,7 @@ THEN
 END
 
 IF
-    RealGlobalTimerExpired("LK#XulQuest1Timer2","GLOBAL")
+    GlobalTimerExpired("LK#XulQuest1Timer2","GLOBAL")
     InParty(Myself)
     See(Player1)
     !StateCheck("Xulaye",CD_STATE_NOTVALID)

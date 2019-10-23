@@ -215,7 +215,7 @@ CHAIN LK#XLAR LK#XQKiiRret_411
   == LK#XLAR @89
   == LK#XULJ @90 
   DO ~SetGlobal("LK#XulQuest","GLOBAL",5)
-     RealSetGlobalTimer("LK#XulQuest1Timer","GLOBAL",1200)
+     SetGlobalTimer("LK#XulQuest1Timer","GLOBAL",ONE_DAY)
      AddJournalEntry(@91,QUEST)
      ActionOverride("lk#xmes",LeaveAreaLUA("AR2205","",[688.821],5))
      ActionOverride("lk#xlar",EscapeArea())
@@ -607,8 +607,8 @@ APPEND LK#XULJ
 
   IF ~Global("LK#XulQuestReminder","GLOBAL",1)~ LK#XulRem
     SAY @230 
-    ++ @231 DO ~IncrementGlobal("LK#XulQuestReminder","GLOBAL",1) RealSetGlobalTimer("LK#XulQuest1Timer2","GLOBAL",900)~ + LK#XulRem_1
-    ++ @232 DO ~IncrementGlobal("LK#XulQuestReminder","GLOBAL",1) RealSetGlobalTimer("LK#XulQuest1Timer2","GLOBAL",900)~ + LK#XulRem_2
+    ++ @231 DO ~IncrementGlobal("LK#XulQuestReminder","GLOBAL",1) SetGlobalTimer("LK#XulQuest1Timer2","GLOBAL",ONE_DAY)~ + LK#XulRem_1
+    ++ @232 DO ~IncrementGlobal("LK#XulQuestReminder","GLOBAL",1) SetGlobalTimer("LK#XulQuest1Timer2","GLOBAL",ONE_DAY)~ + LK#XulRem_2
     ++ @233 DO ~IncrementGlobal("LK#XulQuestReminder","GLOBAL",1)~ + LK#XulRem_3
   END
   

@@ -6,7 +6,7 @@
 @5    = ~Perhaps you should choose your words more wisely, male scum, or I will be forced to report you.~
 @6    = ~My apologises, mistress, but-~
 @7    = ~Just go, Solaufein.  Walk away, and watch my sister.  Lolth knows what will happen to her if she is left unattended.~
-@8    = ~You would do well to go there immediately, <CHARNAME>--my sister is not known for her patience, and neither am I.~
+@8    = ~You would do well to go there immediately, Veldrin--my sister is not known for her patience, and neither am I.~
 @9    = ~Phaere and I have an--alliance, of sorts.  I stay safe, and she commands my arm.  It is a suitable arrangement.~
 @10   = ~Did I give you permission to speak, Xulaye?!~
 @11   = ~I apologise, sister.  It will not happen again.~
@@ -44,7 +44,7 @@
 @43   = ~See to it that you do, Despana. I suggest you leave immediately, or I will be sure to include you in my report!~
 @44   = ~Yes, and one day spiders will grow beards.  You do not frighten me.~
 @45   = ~You should have more sense, Despana.  Leave now, before I alert the city to your presence here!~
-@46   = ~Pfah.  <CHARNAME>, you heard the Priestess.~
+@46   = ~Pfah. Veldrin, you heard the Priestess.~
 @47   = ~But do not be caught entering here again without permission, or I will let the Priestess carry out the punishment!~
 @48   = ~Watch your tongue, dog, this <PRO_MANWOMAN> is favored by House Despana.  Cross <PRO_HIMHER>, and you will become an enemy of one of the greatest Houses to inhabit Ust Natha.~
 @49   = ~Hah!  Your pathetic house is not long for this world, female.  Your threats are meaningless.~
@@ -91,7 +91,7 @@
 @90   = ~Hardly the strongest, I am sure.  My own house in Ched Nasad is gathering its own forces.~
 @91   = ~What's your point?~
 @92   = ~My apologies, Mistress, but there are many things to be done.  Talking does not equate to work.~
-@93   = ~Nothing so mundane, <CHARNAME>.  But the eventual goal of my House is not your concern, it is mine.  What *is* your concern, however, is that I am the one to achieve that goal.~
+@93   = ~Nothing so mundane, Veldrin.  But the eventual goal of my House is not your concern, it is mine.  What *is* your concern, however, is that I am the one to achieve that goal.~
 @94   = ~Is that so?  Hah, somehow I doubt that they will breach their own walls, let alone ours.  I am not worried about you, nor your House, fool.~
 @95   = ~I shall continue, regardless of your irreverent interruption.  I will have silence while I speak!~
 @96   = ~Phaere would use you to further her own ends.  Foolish bitch that she is, she believes she can hoodwink me into believing her lies about alliance and strength in numbers.  I alone will rule, and just as she would have me brushed aside, an insignificant bug, so I shall brush *her* aside.~ [lk#xul45]

@@ -1,3 +1,10 @@
+V 2.2
+___________________________
+- dialogue corrections
+- quest improvement
+- some bugs fixed
+
+
 V 2.1
 ___________________________
 - dialogue loop fixed
