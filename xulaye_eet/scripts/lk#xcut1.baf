@@ -11,13 +11,6 @@ THEN
     ActionOverride(Player4,LeaveAreaLUA("AR2100","",[260.3441],1))
     ActionOverride(Player5,LeaveAreaLUA("AR2100","",[319.3436],1))
     ActionOverride(Player6,LeaveAreaLUA("AR2100","",[355.3392],1))
-    ActionOverride(Player1,FaceObject("lk#xlar"))
-    ActionOverride(Player2,FaceObject("lk#xlar"))
-    ActionOverride(Player3,FaceObject("lk#xlar"))
-    ActionOverride(Player4,FaceObject("lk#xlar"))
-    ActionOverride(Player5,FaceObject("lk#xlar"))
-    ActionOverride(Player6,FaceObject("lk#xlar"))
     FadeFromColor([20.0],0)
     EndCutSceneMode()
-    ActionOverride("lk#xmes",StartDialogueNoSet("Xulaye"))
 END
