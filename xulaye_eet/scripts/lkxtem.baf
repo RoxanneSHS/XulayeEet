@@ -25,6 +25,7 @@ IF
     Global("LK#XulayeWins","GLOBAL",3)
 THEN
   RESPONSE #100
+  ActionOverride("Xulaye1",SetDialogue("LK#Xulx"))
     Wait(1)
     ActionOverride("Xulaye1",StartDialogueNoSet(Player1))
 END
@@ -34,6 +35,7 @@ IF
     Global("LK#XulayeWins","GLOBAL",4)
 THEN
   RESPONSE #100
+  ActionOverride("Xulaye1",SetDialogue("LK#Xulx"))
     Wait(5)
     ActionOverride("Xulaye1",StartDialogueNoSet(Player1)
 END 
