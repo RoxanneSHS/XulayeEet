@@ -412,8 +412,10 @@ APPEND UDDUER01
   
   IF ~~ LK#XAQ_113
     SAY @166
-    IF ~~ UNSOLVED_JOURNAL @167 + LK#XAQ_116
+    IF ~PartyHasItem("lk#xarm")~ UNSOLVED_JOURNAL @167 + LK#XAQ_116
+    IF ~!PartyHasItem("lk#xarm")~ DO~GiveItemCreate("lk#xarm",[PC],1,0,0)~ UNSOLVED_JOURNAL @167 + LK#XAQ_116
   END
+
   
   IF ~~ LK#XAQ_114
     SAY @168
