@@ -8,6 +8,7 @@ AUTO_TRA ~xulaye_eet/translations/%s~
 
 LANGUAGE ~English~ ~english~ ~xulaye_eet/translations/english/setup.tra~
 LANGUAGE ~Russian (by Arcanecoast.ru)~ ~russian~ ~xulaye_eet/translations/Russian/setup.tra~
+LANGUAGE ~Schinese~ ~schinese~ ~xulaye_eet/translations/schinese/setup.tra~
 
 BEGIN @12
 
